@@ -1,6 +1,7 @@
 import PageHero from '@/components/page-hero'
 import SectionContainer from '@/components/section-container'
 import EditorialBlock from '@/components/editorial-block'
+import Reveal from '@/components/animation/reveal'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Separator } from '@/components/ui/separator'
 
@@ -69,21 +70,24 @@ Our platform bridges the gap between strategy and execution, connecting executiv
       {/* Who We Convene */}
       <SectionContainer className="space-y-12">
         <div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-pretty mb-6">
-            Who We Convene
-          </h2>
-          <p className="text-lg text-foreground/70 mb-12 max-w-2xl">
-            The Technology Boardroom brings together executives and leaders from across the technology, finance, policy, and innovation sectors:
-          </p>
+          <Reveal>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-pretty mb-6">
+              Who We Convene
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <p className="text-lg text-foreground/70 mb-12 max-w-2xl">
+              The Technology Boardroom brings together executives and leaders from across the technology, finance, policy, and innovation sectors:
+            </p>
+          </Reveal>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {roles.map((role) => (
-            <div
-              key={role}
-              className="border border-border rounded-sm px-4 py-3 bg-card/50 hover:bg-secondary/30 transition-colors"
-            >
-              <p className="text-foreground/80 text-sm font-medium">{role}</p>
-            </div>
+          {roles.map((role, i) => (
+            <Reveal key={role} delay={i * 0.04}>
+              <div className="border border-border rounded-sm px-4 py-3 bg-card/50 hover:bg-secondary/30 transition-colors">
+                <p className="text-foreground/80 text-sm font-medium">{role}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
       </SectionContainer>
@@ -93,30 +97,36 @@ Our platform bridges the gap between strategy and execution, connecting executiv
       {/* Why Join */}
       <SectionContainer className="space-y-12">
         <div>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-pretty mb-6">
-            Why Join the Boardroom
-          </h2>
-          <p className="text-lg text-foreground/70 mb-12 max-w-2xl">
-            Membership offers unparalleled access to executive leaders, curated insights, and strategic opportunities.
-          </p>
+          <Reveal>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground text-pretty mb-6">
+              Why Join the Boardroom
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <p className="text-lg text-foreground/70 mb-12 max-w-2xl">
+              Membership offers unparalleled access to executive leaders, curated insights, and strategic opportunities.
+            </p>
+          </Reveal>
         </div>
         <Accordion type="single" collapsible className="space-y-4">
           {whyJoin.map((item, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="border border-border px-6 py-2 bg-card hover:bg-secondary/30 transition-colors">
-              <AccordionTrigger className="hover:text-accent transition-colors">
-                <div className="text-left">
-                  <h3 className="font-display text-lg font-semibold text-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-foreground/60 font-normal">
-                    {item.description}
-                  </p>
-                </div>
-              </AccordionTrigger>
-              <AccordionContent className="text-foreground/70 pt-4">
-                {item.content}
-              </AccordionContent>
-            </AccordionItem>
+            <Reveal key={index} delay={index * 0.05}>
+              <AccordionItem value={`item-${index}`} className="border border-border px-6 py-2 bg-card hover:bg-secondary/30 transition-colors">
+                <AccordionTrigger className="hover:text-accent transition-colors">
+                  <div className="text-left">
+                    <h3 className="font-display text-lg font-semibold text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-foreground/60 font-normal">
+                      {item.description}
+                    </p>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="text-foreground/70 pt-4">
+                  {item.content}
+                </AccordionContent>
+              </AccordionItem>
+            </Reveal>
           ))}
         </Accordion>
       </SectionContainer>
@@ -126,12 +136,16 @@ Our platform bridges the gap between strategy and execution, connecting executiv
       {/* Vision Statement */}
       <SectionContainer className="py-16">
         <div className="bg-secondary/20 border border-border rounded-sm px-8 py-12">
-          <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center text-pretty mb-6">
-            Our Vision
-          </h3>
-          <p className="text-center text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            To create a global leadership community where the world's most innovative and influential technology executives collaborate on solutions to the defining challenges of our time—shaping the future of technology, business, and society.
-          </p>
+          <Reveal>
+            <h3 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center text-pretty mb-6">
+              Our Vision
+            </h3>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <p className="text-center text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+              To create a global leadership community where the world's most innovative and influential technology executives collaborate on solutions to the defining challenges of our time—shaping the future of technology, business, and society.
+            </p>
+          </Reveal>
         </div>
       </SectionContainer>
     </>

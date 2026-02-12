@@ -1,3 +1,6 @@
+ 'use client'
+
+import { motion } from 'framer-motion'
 import { Button } from './ui/button'
 import Link from 'next/link'
 
@@ -41,18 +44,33 @@ export default function PageHero({
       )}
 
       <div className="relative z-20 mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 lg:px-8">
-        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-pretty text-foreground mb-6">
+        <motion.h1
+          className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-pretty text-foreground mb-6"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+        >
           {headline}
-        </h1>
+        </motion.h1>
 
         {subtext && (
-          <p className="text-lg md:text-xl text-foreground/80 text-balance mb-12 max-w-2xl mx-auto leading-relaxed">
+          <motion.p
+            className="text-lg md:text-xl text-foreground/80 text-balance mb-12 max-w-2xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.12 }}
+          >
             {subtext}
-          </p>
+          </motion.p>
         )}
 
         {(cta || secondaryCta) && (
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+          <motion.div
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.24 }}
+          >
             {cta && (
               <Button
                 asChild
@@ -70,7 +88,7 @@ export default function PageHero({
                 <Link href={secondaryCta.href}>{secondaryCta.text}</Link>
               </Button>
             )}
-          </div>
+          </motion.div>
         )}
       </div>
     </section>

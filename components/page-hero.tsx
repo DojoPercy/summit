@@ -1,8 +1,11 @@
- 'use client'
-
-import { motion } from 'framer-motion'
+'use client'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import { motion as _motion } from 'framer-motion'
+
+// Workaround for framer-motion + TS intrinsic element typing with React 19
+// Cast motion to `any` so we can use `motion.h1`, `motion.p`, etc., without type errors.
+const motion: any = _motion as any
 
 interface PageHeroProps {
   headline: string
@@ -66,12 +69,7 @@ export default function PageHero({
         )}
 
         {(cta || secondaryCta) && (
-          <motion.div
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.24 }}
-          >
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
             {cta && (
               <Button
                 asChild
@@ -89,7 +87,7 @@ export default function PageHero({
                 <Link href={secondaryCta.href}>{secondaryCta.text}</Link>
               </Button>
             )}
-          </motion.div>
+          </div>
         )}
       </div>
     </section>

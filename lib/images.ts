@@ -1,5 +1,5 @@
 export const images = {
-  hero1: '/7thNationalComm&Tech2025(162of601).jpg',
+  hero1: '/7thNationalComm&Tech2025(327of601).jpg',
   hero2: '/7thNationalComm&Tech2025(170of601).jpg',
   hero3: '/7thNationalComm&Tech2025(229of601).jpg',
   hero4: '/7thNationalComm&Tech2025(268of601).jpg',

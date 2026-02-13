@@ -15,7 +15,7 @@ export default function ContactCard({
   return (
     <Card className="border-border bg-card hover:bg-secondary/50 transition-colors">
       <CardContent className="pt-8 pb-6">
-        <div className="text-3xl mb-4">{icon}</div>
+          <div className="text-3xl mb-4">{icon}</div>
         <h3 className="font-display text-xl font-semibold text-foreground mb-4">
           {type}
         </h3>

@@ -1,5 +1,6 @@
 import PageHero from '@/components/page-hero'
 import images from '@/lib/images'
+import { Mail, Users, Phone, MapPin, Building } from 'lucide-react'
 import SectionContainer from '@/components/section-container'
 import ContactCard from '@/components/contact-card'
 import ContactForm from '@/components/contact-form'
@@ -8,17 +9,17 @@ import { Separator } from '@/components/ui/separator'
 const contactMethods = [
   {
     type: 'General Enquiries',
-    icon: '✉️',
+    icon: <Mail className="w-7 h-7" />,
     details: ['hello@theboaroom.com', 'Response within 48 hours'],
   },
   {
     type: 'Partnerships & Media',
-    icon: '🤝',
+    icon: <Users className="w-7 h-7" />,
     details: ['partnerships@theboaroom.com', 'Strategic collaboration opportunities'],
   },
   {
     type: 'Phone',
-    icon: '📞',
+    icon: <Phone className="w-7 h-7" />,
     details: ['+971 4 XXX XXXX (Dubai)', 'Available weekdays 9AM-5PM GST'],
   },
 ]
@@ -27,12 +28,12 @@ const offices = [
   {
     region: 'United Arab Emirates',
     description: 'Our primary hub serving the Middle East, Africa, and South Asia regions. Located in Dubai, our team serves executives across the UAE, GCC, and African markets.',
-    icon: '🕌',
+    icon: <MapPin className="w-7 h-7" />,
   },
   {
     region: 'Ghana',
     description: 'Our African operations center facilitating engagement across the African continent and supporting strategic initiatives in emerging markets.',
-    icon: '🏛️',
+    icon: <Building className="w-7 h-7" />,
   },
 ]
 

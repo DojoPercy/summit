@@ -186,7 +186,7 @@ export default function About() {
                 <img
                   src={images.aboutMembership}
                   alt="Membership Benefits"
-                  className="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
+                  className="w-full h-full object-cover brightness-75 transition-all duration-700"
                 />
                 <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent">
                   <p className="text-white text-sm font-medium italic">
@@ -291,7 +291,7 @@ export default function About() {
           <img
             src={images.aboutLeadership}
             alt="Leadership Backdrop"
-            className="w-full h-full object-cover grayscale"
+            className="w-full h-full object-cover"
           />
         </div>
 

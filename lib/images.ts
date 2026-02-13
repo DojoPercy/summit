@@ -24,19 +24,19 @@ export const images = {
   // Backgrounds
   masdarCity: "/backgrounds/masdar-city.jpg",
   // About Page Specific
-  aboutPurpose: "/about/purpose.jpg",
-  aboutMembership: "/about/membership-preview.jpg",
-  aboutLeadership: "/about/leadership-visual.jpg",
-  aboutProfilePreview: "/about/profile-mockup.jpg",
+  aboutPurpose: "/about/purpose.png",
+  aboutMembership: "/about/membership-preview.png",
+  aboutLeadership: "/about/leadership-visual.png",
+  aboutProfilePreview: "/about/profile-mockup.png",
   // Projects Page Specific
-  projectRoundtables: "/projects/roundtables.jpg",
-  projectVirtual: "/projects/virtual-dialogues.jpg",
-  projectAI: "/projects/ai-energy.jpg",
-  projectMobility: "/projects/mobility.jpg",
-  projectFintech: "/projects/fintech.jpg",
-  projectNetworking: "/projects/networking.jpg",
+  projectRoundtables: "/projects/roundtables.png",
+  projectVirtual: "/projects/virtual-dialogues.png",
+  projectAI: "/projects/ai-energy.png",
+  projectMobility: "/projects/mobility.png",
+  projectFintech: "/projects/fintech.png",
+  projectNetworking: "/projects/networking.png",
   // Contact Page Specific
-  contactVisual: "/contact/visual.jpg",
+  contactVisual: "/contact/visual.png",
   // Home Page Expansion Specific
   homeVision: "/home/vision-bg.png",
   homeMembership: "/home/membership-bg.png",

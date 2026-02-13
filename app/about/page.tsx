@@ -7,18 +7,14 @@ import { Separator } from '@/components/ui/separator'
 import images from '@/lib/images'
 
 const roles = [
-  'Chief Technology Officers',
-  'Chief Digital Officers',
-  'Chief Innovation Officers',
-  'Chief Data Officers',
-  'Chief Information Officers',
-  'Board Members & Executives',
-  'Technology Strategists',
-  'Policy Makers & Regulators',
-  'Venture Capital Leaders',
-  'Enterprise Architects',
-  'Innovation Directors',
-  'Technology Council Members',
+  'Chief Information Officers (CIOs)',
+  'Chief Technology Officers (CTOs)',
+  'Chief Digital Officers (CDOs)',
+  'Heads of Innovation',
+  'Chief Data & AI Officers',
+  'Board Members overseeing technology and digital strategy',
+  'Government & Public Sector Technology Leaders',
+  'Regulators, policymakers & digital economy stakeholders',
 ]
 
 const whyJoin = [
@@ -50,20 +46,18 @@ export default function About() {
       {/* Hero Section */}
       <PageHero
         headline="About The Technology Boardroom"
-        subtext="A premier executive council dedicated to strategic dialogue on technology, innovation, and business leadership."
+        subtext="The Technology Boardroom convenes Chief Information Officers (CIOs), Chief Technology Officers (CTOs), Chief Digital Officers (CDOs), Heads of Innovation, Chief Data & AI Officers, and Public Sector Technology Leaders from across the Middle East, Africa, and global markets."
         backgroundImage={images.about}
       />
 
       {/* Intro Section */}
       <SectionContainer className="space-y-12">
         <EditorialBlock
-          title="Our Purpose"
-          leftContent="The Technology Boardroom exists to convene the world's most thoughtful and influential technology executives for meaningful dialogue on the challenges and opportunities shaping our future.
+          title="Our Purpose & Vision"
+          leftContent={`The Technology Boardroom was established to elevate technology conversations beyond operational delivery—into the boardroom, policy arena, and executive strategy space. It is a trusted environment where leaders move beyond theory to practical, high-impact conversations on technology strategy, digital resilience, governance, and long-term value creation.
 
-We believe that the best solutions emerge from intimate conversations between peers—executives who understand each other's challenges and can collaborate on solutions that matter."
-          rightContent="Rather than hosting large-scale conferences or public forums, we curate intimate gatherings that foster genuine connection and substantive dialogue. Our members represent the highest levels of organizational leadership: CEOs, CIOs, CTOs, CDOs, and board members committed to driving meaningful technology innovation.
-
-Our platform bridges the gap between strategy and execution, connecting executive leadership across industries and regions."
+Through curated engagements across global hubs, The Technology Boardroom enables cross-regional exchange that informs policy, strengthens governance, and accelerates innovation-led growth.`}
+          rightContent={`Our vision is to be the world’s most trusted executive platform where technology leaders shape strategy, influence policy, and co-create sustainable digital economies. We advance strategic technology leadership at board and executive levels, shape digital governance and technology policy dialogue across regions, and enable responsible innovation and AI adoption.`}
         />
       </SectionContainer>
 
@@ -83,15 +77,15 @@ Our platform bridges the gap between strategy and execution, connecting executiv
             </p>
           </Reveal>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {roles.map((role, i) => (
-            <Reveal key={role} delay={i * 0.04}>
-              <div className="border border-border rounded-sm px-4 py-3 bg-card/50 hover:bg-secondary/30 transition-colors">
-                <p className="text-foreground/80 text-sm font-medium">{role}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {roles.map((role, i) => (
+              <Reveal key={role} delay={i * 0.04}>
+                <div className="border border-border rounded-sm px-4 py-3 bg-card/50 hover:bg-secondary/30 transition-colors">
+                  <p className="text-foreground/80 text-sm font-medium">{role}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
       </SectionContainer>
 
       <Separator className="bg-border" />
@@ -145,7 +139,7 @@ Our platform bridges the gap between strategy and execution, connecting executiv
           </Reveal>
           <Reveal delay={0.08}>
             <p className="text-center text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-              To create a global leadership community where the world's most innovative and influential technology executives collaborate on solutions to the defining challenges of our time—shaping the future of technology, business, and society.
+              The Technology Boardroom exists to advance strategic technology leadership at board and executive levels, shape digital governance and technology policy dialogue across regions, and foster collaboration between public and private sector leaders to co-create sustainable digital economies.
             </p>
           </Reveal>
         </div>

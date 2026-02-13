@@ -14,8 +14,8 @@ const footerLinks = {
     { name: 'Code of Conduct', href: '#' },
   ],
   contact: [
-    { label: 'Email', value: 'hello@theboaroom.com' },
-    { label: 'Phone', value: '+971 4 XXX XXXX' },
+    { label: 'Email', value: 'info@thetechnologyboardroom.com' },
+    { label: 'Phone', value: '+971 55 790 9643' },
   ],
 }
 
@@ -87,11 +87,12 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-border mt-12 pt-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6">
               <p className="text-xs text-foreground/50">© 2024 The Technology Boardroom. All rights reserved.</p>
               <div className="hidden sm:block h-6 w-28 relative">
                 <Image src="/RADCOMM.png" alt="RADCOMM" fill style={{ objectFit: 'contain' }} />
               </div>
+              <div className="text-xs text-foreground/60 mt-2 sm:mt-0">Powered by RADCOMM Group</div>
             </div>
           </div>
         </div>

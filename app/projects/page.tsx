@@ -82,7 +82,7 @@ export default function Projects() {
       {/* Hero Section */}
       <PageHero
         headline="Platforms & Experiences"
-        subtext="Our curated portfolio of executive platforms, forums, and dialogues designed for strategic leadership engagement."
+        subtext="Invite-only executive platforms, roundtables, and virtual dialogues designed to advance strategic technology leadership, policy, and innovation."
         backgroundImage={images.hero3}
       />
 

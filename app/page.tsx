@@ -67,13 +67,13 @@ export default function Home() {
       {/* Platform Description */}
       <SectionContainer className="space-y-12">
         <EditorialBlock
-          title="Premium Executive Leadership"
-          leftContent="The Technology Boardroom brings together distinguished executives and innovative thinkers for strategic dialogue on the most pressing technology challenges facing organizations globally.
+          title="The Technology Boardroom"
+          leftContent={`The Technology Boardroom is an exclusive global executive platform curated by RADCOMM Group, bringing together the world’s most influential technology leaders, digital transformation executives, and innovation policymakers to shape the future of technology, governance, and digital economies.
 
-Our curated community represents the highest levels of corporate and institutional leadership—CEOs, CTOs, CDOs, and policy makers committed to advancing technology strategy and innovation."
-          rightContent="We believe that true innovation emerges from dialogue. Through exclusive roundtables, virtual forums, and strategic retreats, members engage with peers facing similar challenges, gaining insights and building relationships that drive organizational transformation.
+Designed as a high-level leadership council, the platform provides an invitation-only environment where senior decision-makers engage in strategic dialogue, trusted peer exchange, and collaborative problem-solving on the most critical technology issues facing organisations, governments, and societies.`}
+          rightContent={`From boardrooms in New York and Dubai to executive dialogues in Accra, Nairobi, and Riyadh, The Technology Boardroom connects leaders shaping digital futures across regions and sectors.
 
-Our platform transcends traditional conference experiences, offering intimate conversations between industry leaders, innovative problem-solving workshops, and collaborative exploration of emerging opportunities."
+Participation is by invitation or nomination only. Apply Now!`}
         />
       </SectionContainer>
 
@@ -123,9 +123,9 @@ Our platform transcends traditional conference experiences, offering intimate co
 
       {/* CTA Section */}
       <CTASection
-        headline="Ready to Join?"
-        description="Apply for participation in The Technology Boardroom and connect with the world's most forward-thinking technology executives."
-        cta={{ text: 'Apply for Participation', href: '/contact' }}
+        headline="Join the Conversation"
+        description="The Technology Boardroom is where technology leaders shape strategy, influence policy, and co-create the future of digital leadership. Participation is by invitation or nomination only."
+        cta={{ text: 'Apply Now', href: '/contact' }}
       />
     </>
   )

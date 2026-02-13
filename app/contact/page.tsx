@@ -10,29 +10,34 @@ const contactMethods = [
   {
     type: 'General Enquiries',
     icon: <Mail className="w-7 h-7" />,
-    details: ['hello@theboaroom.com', 'Response within 48 hours'],
+    details: ['info@thetechnologyboardroom.com', 'Response within 48 hours'],
   },
   {
-    type: 'Partnerships & Media',
+    type: 'Partnerships & Collaboration',
     icon: <Users className="w-7 h-7" />,
-    details: ['partnerships@theboaroom.com', 'Strategic collaboration opportunities'],
+    details: ['info@radcommgroup.com', 'Strategic partnership inquiries'],
+  },
+  {
+    type: 'Media & Publishing',
+    icon: <Mail className="w-7 h-7" />,
+    details: ['publishing@radcommgroup.com', 'Editorial & thought leadership submissions'],
   },
   {
     type: 'Phone',
     icon: <Phone className="w-7 h-7" />,
-    details: ['+971 4 XXX XXXX (Dubai)', 'Available weekdays 9AM-5PM GST'],
+    details: ['+971 55 790 9643', '+233 24 741 5140'],
   },
 ]
 
 const offices = [
   {
     region: 'United Arab Emirates',
-    description: 'Our primary hub serving the Middle East, Africa, and South Asia regions. Located in Dubai, our team serves executives across the UAE, GCC, and African markets.',
+    description: 'RADCOMM Media Group, Masdar City, Abu Dhabi, United Arab Emirates',
     icon: <MapPin className="w-7 h-7" />,
   },
   {
     region: 'Ghana',
-    description: 'Our African operations center facilitating engagement across the African continent and supporting strategic initiatives in emerging markets.',
+    description: 'RADCOMM Group, 58 Mansour Street, Parakuo Estates, Christian Village Achimota, Accra',
     icon: <Building className="w-7 h-7" />,
   },
 ]
@@ -42,8 +47,8 @@ export default function Contact() {
     <>
       {/* Hero Section */}
       <PageHero
-        headline="Get in Touch"
-        subtext="Reach out to learn more about membership, participate in our platforms, or explore partnership opportunities with The Technology Boardroom."
+        headline="Contact Us"
+        subtext="Thank you for your interest in The Technology Boardroom. Participation is by invitation or nomination only. For membership, partnership, media, and programme enquiries, please reach out using the details below."
         backgroundImage={images.hero2}
       />
 

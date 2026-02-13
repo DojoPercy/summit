@@ -19,15 +19,31 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25, duration: 0.6 }}
         >
-          Strategic Leadership for the Technology Age
+          Shaping the Future of Technology Leadership
         </motion.h1>
         <motion.p
-          className="text-white/90 max-w-xl text-sm md:text-base leading-relaxed"
+          className="text-white/90 max-w-2xl text-sm md:text-base leading-relaxed"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          An invitation-only council of executives, innovators, and thought leaders shaping the future of technology, policy, and business strategy.
+          The Technology Boardroom is an exclusive global executive platform curated by RADCOMM Group, bringing together the world’s most influential technology leaders, digital transformation executives, and innovation policymakers to shape the future of technology, governance, and digital economies.
+        </motion.p>
+        <motion.p
+          className="text-white/90 max-w-2xl text-sm md:text-base leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
+        >
+          Designed as a high-level leadership council, the platform provides an invitation-only environment where senior decision-makers engage in strategic dialogue, trusted peer exchange, and collaborative problem-solving on the most critical technology issues facing organisations, governments, and societies.
+        </motion.p>
+        <motion.p
+          className="text-white/90 max-w-2xl text-sm md:text-base font-semibold mt-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+        >
+          Participation is by invitation or nomination only. Apply Now!
         </motion.p>
         {/* No CTA button per request; hero is informational */}
       </div>

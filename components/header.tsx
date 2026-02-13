@@ -11,10 +11,10 @@ import images from '@/lib/images'
 const motion: any = _motion as any
 
 const navigation = [
-  { name: 'Home', href: '/' },
+  { name: 'Homepage', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact Us', href: '/contact' },
 ]
 
 export default function Header() {
@@ -59,11 +59,11 @@ export default function Header() {
         </div>
 
         {/* CTA Button */}
-        <Button 
-          asChild 
+        <Button
+          asChild
           className="ml-auto bg-accent text-accent-foreground hover:bg-primary"
         >
-          <Link href="/contact">Apply for Participation</Link>
+          <Link href="/contact">Apply Now</Link>
         </Button>
       </nav>
 

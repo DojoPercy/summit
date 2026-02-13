@@ -1,38 +1,47 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import Image from "next/image"
-import Autoplay from "embla-carousel-autoplay"
-import useEmblaCarousel from "embla-carousel-react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import images from "@/lib/images"
+import * as React from "react";
+import Image from "next/image";
+import Autoplay from "embla-carousel-autoplay";
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import images from "@/lib/images";
 
-const slides = [images.hero1, images.hero2, images.hero3, images.hero4, images.hero5]
+const slides = [
+  images.hero1,
+  images.hero2,
+  images.hero3,
+  images.hero4,
+  images.hero5,
+];
 
 export function HeroCarousel() {
-  const autoplay = React.useMemo(() => Autoplay({ delay: 4000, stopOnInteraction: false }), [])
+  const autoplay = React.useMemo(
+    () => Autoplay({ delay: 5000, stopOnInteraction: false }),
+    [],
+  );
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay])
-  const [prevEnabled, setPrevEnabled] = React.useState(false)
-  const [nextEnabled, setNextEnabled] = React.useState(false)
-  const [selectedIndex, setSelectedIndex] = React.useState(0)
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay]);
+  const [prevEnabled, setPrevEnabled] = React.useState(false);
+  const [nextEnabled, setNextEnabled] = React.useState(false);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
-  const scrollPrev = () => emblaApi?.scrollPrev()
-  const scrollNext = () => emblaApi?.scrollNext()
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
 
   const onSelect = React.useCallback(() => {
-    if (!emblaApi) return
-    setPrevEnabled(emblaApi.canScrollPrev())
-    setNextEnabled(emblaApi.canScrollNext())
-    setSelectedIndex(emblaApi.selectedScrollSnap())
-  }, [emblaApi])
+    if (!emblaApi) return;
+    setPrevEnabled(emblaApi.canScrollPrev());
+    setNextEnabled(emblaApi.canScrollNext());
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
 
   React.useEffect(() => {
-    if (!emblaApi) return
-    emblaApi.on("select", onSelect)
-    onSelect()
-  }, [emblaApi, onSelect])
+    if (!emblaApi) return;
+    emblaApi.on("select", onSelect);
+    onSelect();
+  }, [emblaApi, onSelect]);
 
   return (
     <section className="relative w-full h-screen overflow-hidden group">
@@ -40,8 +49,17 @@ export function HeroCarousel() {
       <div className="w-full h-full overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {slides.map((img, index) => (
-            <div key={index} className="min-w-0 flex-[0_0_100%] relative h-screen">
-              <Image src={img} alt={`Hero ${index + 1}`} fill priority className="object-cover brightness-75 transition-all duration-700" />
+            <div
+              key={index}
+              className="min-w-0 flex-[0_0_100%] relative h-screen"
+            >
+              <Image
+                src={img}
+                alt={`Hero ${index + 1}`}
+                fill
+                priority
+                className="object-cover brightness-[0.35] transition-all duration-700"
+              />
             </div>
           ))}
         </div>
@@ -80,7 +98,7 @@ export function HeroCarousel() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default HeroCarousel
+export default HeroCarousel;

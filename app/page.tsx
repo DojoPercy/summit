@@ -1,5 +1,6 @@
 import PageHero from "@/components/page-hero";
 import HeroSection from "@/components/hero/HeroSection";
+import ExecutiveManifesto from "@/components/executive-manifesto";
 import SectionContainer from "@/components/section-container";
 import PillarCard from "@/components/pillar-card";
 import LocationCard from "@/components/location-card";
@@ -70,18 +71,8 @@ export default function Home() {
       {/* Fullscreen Hero Section */}
       <HeroSection />
 
-      {/* Platform Description */}
-      <SectionContainer className="space-y-12">
-        <EditorialBlock
-          title="The Technology Boardroom"
-          leftContent={`The Technology Boardroom is an exclusive global executive platform curated by RADCOMM Group, bringing together the world’s most influential technology leaders, digital transformation executives, and innovation policymakers to shape the future of technology, governance, and digital economies.
-
-Designed as a high-level leadership council, the platform provides an invitation-only environment where senior decision-makers engage in strategic dialogue, trusted peer exchange, and collaborative problem-solving on the most critical technology issues facing organisations, governments, and societies.`}
-          rightContent={`From boardrooms in New York and Dubai to executive dialogues in Accra, Nairobi, and Riyadh, The Technology Boardroom connects leaders shaping digital futures across regions and sectors.
-
-Participation is by invitation or nomination only. Apply Now!`}
-        />
-      </SectionContainer>
+      {/* The Executive Manifesto */}
+      <ExecutiveManifesto />
 
       {/* Strategic Pillars */}
       <SectionContainer className="space-y-12" id="pillars">

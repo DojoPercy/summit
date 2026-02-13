@@ -12,7 +12,7 @@ import { ThemeToggle } from "./theme-toggle";
 const motion: any = _motion as any;
 
 const navigation = [
-  { name: "Homepage", href: "/" },
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Projects", href: "/projects" },
   { name: "Contact Us", href: "/contact" },

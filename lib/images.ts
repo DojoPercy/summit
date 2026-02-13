@@ -28,6 +28,18 @@ export const images = {
   aboutMembership: "/images/about/membership-preview.jpg",
   aboutLeadership: "/images/about/leadership-visual.jpg",
   aboutProfilePreview: "/images/about/profile-mockup.jpg",
+  // Projects Page Specific
+  projectRoundtables: "/images/projects/roundtables.jpg",
+  projectVirtual: "/images/projects/virtual-dialogues.jpg",
+  projectAI: "/images/projects/ai-energy.jpg",
+  projectMobility: "/images/projects/mobility.jpg",
+  projectFintech: "/images/projects/fintech.jpg",
+  projectNetworking: "/images/projects/networking.jpg",
+  // Contact Page Specific
+  contactVisual: "/images/contact/visual.jpg",
+  // Home Page Expansion Specific
+  homeVision: "/images/home/vision-bg.jpg",
+  homeMembership: "/images/home/membership-bg.jpg",
 };
 
 export default images;

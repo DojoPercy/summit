@@ -10,6 +10,7 @@ import CTASection from "@/components/cta-section";
 import EditorialBlock from "@/components/editorial-block";
 import { Users, Rocket, Scale, Lightbulb, Globe } from "lucide-react";
 import { motion as _motion } from "framer-motion";
+import images from "@/lib/images";
 
 const motion: any = _motion as any;
 
@@ -18,31 +19,31 @@ const pillars = [
     title: "Board-Level Technology Leadership",
     description:
       "Elevating technology conversations from IT execution to boardroom strategy, governance, and enterprise-wide impact.",
-    // imagePath: "/images/pillars/boardroom.jpg", // ADD IMAGE: Boardroom/Executive Strategy
+    imagePath: images.pillarBoardroom,
   },
   {
     title: "Digital Transformation & AI",
     description:
       "Exploring practical applications of AI, data, cloud, cybersecurity, and emerging technologies across sectors.",
-    // imagePath: "/images/pillars/ai-tech.jpg", // ADD IMAGE: Advanced AI/Tech Interface
+    imagePath: images.pillarAI,
   },
   {
     title: "Technology Policy & Digital Governance",
     description:
       "Bridging the gap between innovation and regulation to support secure, inclusive, and sustainable digital ecosystems.",
-    // imagePath: "/images/pillars/governance.jpg", // ADD IMAGE: Policy/Modern Government Building
+    imagePath: images.pillarGovernance,
   },
   {
     title: "Innovation, Sustainability & Impact",
     description:
       "Leveraging technology to advance energy transition, climate action, financial inclusion, smart infrastructure, and social impact.",
-    // imagePath: "/images/pillars/sustainability.jpg", // ADD IMAGE: Green Tech/Innovation
+    imagePath: images.pillarSustainability,
   },
   {
     title: "Cross-Regional Collaboration",
     description:
       "Connecting leaders across Africa, the Middle East, Europe, and North America to share insight, experience, and solutions.",
-    // imagePath: "/images/pillars/collaboration.jpg", // ADD IMAGE: Global Connection/Conference
+    imagePath: images.pillarCollaboration,
   },
 ];
 
@@ -52,28 +53,28 @@ const cities = [
     focus: "Innovation, energy, and digital economy leadership",
     description:
       "Leading the global narrative on energy transition and digital governance through high-level summits and executive dialogues.",
-    // imagePath: "/images/cities/dubai.jpg", // ADD IMAGE: Dubai/Abu Dhabi Skyline
+    imagePath: images.cityDubai,
   },
   {
     name: "Accra & Nairobi",
     focus: "Digital transformation, fintech, and public sector innovation",
     description:
       "Hubs of rapid digital evolution, where fintech and public sector innovation converge to redefine African technology leadership.",
-    // imagePath: "/images/cities/accra.jpg", // ADD IMAGE: Modern Accra or Nairobi Cityscape
+    imagePath: images.cityAccra,
   },
   {
     name: "Riyadh",
     focus: "Technology governance and smart nation initiatives",
     description:
       "At the heart of Vision 2030, Riyadh represents the pinnacle of smart nation initiatives and technology-led societal transformation.",
-    // imagePath: "/images/cities/riyadh.jpg", // ADD IMAGE: Riyadh Skyline/KAFD
+    imagePath: images.cityRiyadh,
   },
   {
     name: "New York & Global Cities",
     focus: "Global perspectives and best practices",
     description:
       "Bridging East and West through strategic dialogues in the world's most influential financial and technology capitals.",
-    // imagePath: "/images/cities/nyc.jpg", // ADD IMAGE: New York City / Global Hub
+    imagePath: images.cityNyc,
   },
 ];
 
@@ -146,12 +147,19 @@ export default function Home() {
               >
                 {/* City Image Wrapper */}
                 <div className="w-full lg:w-1/2 relative aspect-[4/3] overflow-hidden rounded-sm group border border-border">
-                  {/* ADD IMAGE: {city.name} */}
-                  <div className="absolute inset-0 bg-secondary/20 transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
-                    <span className="text-foreground/20 text-xs font-mono uppercase tracking-[0.2em]">
-                      // ADD IMAGE: {city.name}
-                    </span>
-                  </div>
+                  {city.imagePath ? (
+                    <img
+                      src={city.imagePath}
+                      alt={city.name}
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 bg-secondary/20 transition-transform duration-700 group-hover:scale-105 flex items-center justify-center">
+                      <span className="text-foreground/20 text-xs font-mono uppercase tracking-[0.2em]">
+                        // ADD IMAGE: {city.name}
+                      </span>
+                    </div>
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
@@ -184,8 +192,11 @@ export default function Home() {
           <div className="relative overflow-hidden rounded-sm bg-secondary/5 px-8 py-16 md:px-16 md:py-24">
             {/* Subtle Background (HQ masdar city overlay) */}
             <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none">
-              {/* ADD IMAGE: Masdar City / RADCOMM HQ Background - Something modern/sustainable */}
-              <div className="w-full h-full bg-accent" />
+              <img
+                src={images.masdarCity}
+                alt="Masdar City HQ"
+                className="w-full h-full object-cover grayscale"
+              />
             </div>
 
             <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -215,7 +226,7 @@ export default function Home() {
               <div className="lg:col-span-4 flex flex-col items-center justify-center space-y-8">
                 <div className="relative h-32 w-full max-w-[280px]">
                   <img
-                    src="/RADCOMM.png"
+                    src={images.radcomm}
                     alt="RADCOMM Group"
                     className="h-full w-full object-contain filter brightness-110 contrast-110"
                   />

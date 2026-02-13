@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import images from '@/lib/images'
 
 const footerLinks = {
   company: [
@@ -27,7 +28,7 @@ export default function Footer() {
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <div className="relative h-10 w-36">
-                <Image src="/TECH BOARDROOM LOGO WHITE.png" alt="Technology Boardroom" fill style={{ objectFit: 'contain' }} />
+                <Image src={images.logoGold} alt="Technology Boardroom" fill style={{ objectFit: 'contain' }} />
               </div>
             </div>
             <p className="text-sm text-foreground/60">

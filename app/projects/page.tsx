@@ -1,12 +1,13 @@
 import PageHero from '@/components/page-hero'
 import images from '@/lib/images'
+import { Target, MessageCircle, Zap, Truck, CreditCard, Handshake } from 'lucide-react'
 import SectionContainer from '@/components/section-container'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
 
 const projects = [
   {
-    icon: '🎯',
+    icon: <Target className="w-8 h-8" />,
     title: 'Executive Roundtables & Boardroom Dialogues',
     description: 'Intimate discussions on strategic priorities, emerging technologies, and organizational challenges.',
     details: [
@@ -17,7 +18,7 @@ const projects = [
     ],
   },
   {
-    icon: '💬',
+    icon: <MessageCircle className="w-8 h-8" />,
     title: 'Virtual Leadership Dialogues',
     description: 'Regular virtual forums on topics critical to technology leadership.',
     details: [
@@ -29,7 +30,7 @@ const projects = [
     ],
   },
   {
-    icon: '⚡',
+    icon: <Zap className="w-8 h-8" />,
     title: 'AI for Energy & Green Transition',
     description: 'Strategic initiatives at the intersection of AI and sustainable technology.',
     details: [
@@ -40,7 +41,7 @@ const projects = [
     ],
   },
   {
-    icon: '🚗',
+    icon: <Truck className="w-8 h-8" />,
     title: 'Green Mobility & Sustainable Transport',
     description: 'Leadership conversations on the future of transportation and environmental responsibility.',
     details: [
@@ -51,7 +52,7 @@ const projects = [
     ],
   },
   {
-    icon: '💰',
+    icon: <CreditCard className="w-8 h-8" />,
     title: 'The Future of Money & Digital Assets',
     description: 'Exploring the transformation of finance, cryptocurrency, and digital economies.',
     details: [
@@ -62,7 +63,7 @@ const projects = [
     ],
   },
   {
-    icon: '🤝',
+    icon: <Handshake className="w-8 h-8" />,
     title: 'Private Networking & Strategic Forums',
     description: 'Exclusive opportunities for executive relationship building and strategic partnerships.',
     details: [

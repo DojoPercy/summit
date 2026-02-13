@@ -5,30 +5,31 @@ import PillarCard from '@/components/pillar-card'
 import LocationCard from '@/components/location-card'
 import CTASection from '@/components/cta-section'
 import EditorialBlock from '@/components/editorial-block'
+import { Users, Rocket, Scale, Lightbulb, Globe } from 'lucide-react'
 
 const pillars = [
   {
-    icon: '👥',
+    icon: <Users className="w-8 h-8" />,
     title: 'Board-Level Leadership',
     description: 'Access to C-suite executives and board members shaping global technology policy and innovation.',
   },
   {
-    icon: '🚀',
+    icon: <Rocket className="w-8 h-8" />,
     title: 'Digital Transformation',
     description: 'Strategic dialogues on digital evolution, emerging technologies, and organizational modernization.',
   },
   {
-    icon: '⚖️',
+    icon: <Scale className="w-8 h-8" />,
     title: 'Policy & Governance',
     description: 'Navigate regulatory landscapes and shape technology policy at the highest levels.',
   },
   {
-    icon: '💡',
+    icon: <Lightbulb className="w-8 h-8" />,
     title: 'Innovation Networks',
     description: 'Connect with industry pioneers and breakthrough thinkers driving the future of technology.',
   },
   {
-    icon: '🌍',
+    icon: <Globe className="w-8 h-8" />,
     title: 'Cross-Regional Strategy',
     description: 'Global perspectives on technology adoption and business strategy across continents.',
   },
@@ -38,22 +39,22 @@ const locations = [
   {
     region: 'Middle East & Africa',
     description: 'Dubai-based operations connecting executives across the UAE, GCC, and African markets.',
-    icon: '🕌',
+    icon: <Globe className="w-8 h-8" />,
   },
   {
     region: 'Europe & Beyond',
     description: 'Strategic partnerships across European innovation hubs and emerging tech centers.',
-    icon: '🏰',
+    icon: <Globe className="w-8 h-8" />,
   },
   {
     region: 'Asia Pacific',
     description: 'Expanding network across Asia-Pacific technology and financial centers.',
-    icon: '🏯',
+    icon: <Globe className="w-8 h-8" />,
   },
   {
     region: 'Global Access',
     description: 'Virtual platforms and strategic visits enabling worldwide executive engagement.',
-    icon: '🌐',
+    icon: <Globe className="w-8 h-8" />,
   },
 ]
 

@@ -1,9 +1,10 @@
 import { Card, CardContent } from './ui/card'
+import React from 'react'
 
 interface ContactCardProps {
   type: string
   details: string[]
-  icon: string
+  icon: React.ReactNode
 }
 
 export default function ContactCard({

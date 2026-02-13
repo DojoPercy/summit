@@ -7,8 +7,8 @@ export const images = {
   about: '/7thNationalComm&Tech2025(584of601).jpg',
   contact: '/contact-hero.jpg',
   projects: '/projects-hero.jpg',
-  logoWhite: '/TECH BOARDROOM LOGO WHITE.png',
-  logoGold: '/TECHBOARDROM LOGO GOLD.png',
+  logoWhite: '/techBoard-logo-white.png',
+  logoGold: '/techBoard-logo-gold.png',
   radcomm: '/RADCOMM.png',
 }
 

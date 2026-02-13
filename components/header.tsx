@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Button } from './ui/button'
 import { usePathname } from 'next/navigation'
 import { motion as _motion } from 'framer-motion'
+import images from '@/lib/images'
 
 // Workaround for framer-motion + TS intrinsic element typing with React 19
 const motion: any = _motion as any
@@ -31,7 +32,7 @@ export default function Header() {
         <Link href="/" className="flex items-center space-x-2 font-display text-2xl font-bold hover:text-primary transition-colors">
           <div className="relative h-10 w-36 sm:w-48">
             <Image
-              src="/TECH BOARDROOM LOGO WHITE.png"
+              src={images.logoGold}
               alt="Technology Boardroom"
               fill
               style={{ objectFit: 'contain' }}

@@ -1,10 +1,13 @@
  'use client'
 
-import { motion } from 'framer-motion'
+import { motion as _motion } from 'framer-motion'
 import { Card, CardContent } from './ui/card'
+import React from 'react'
+
+const motion: any = _motion as any
 
 interface PillarCardProps {
-  icon: string
+  icon: React.ReactNode
   title: string
   description: string
 }

@@ -1,15 +1,16 @@
 import { Card, CardContent } from './ui/card'
+import React from 'react'
 
 interface LocationCardProps {
   region: string
   description: string
-  icon?: string
+  icon?: React.ReactNode
 }
 
 export default function LocationCard({
   region,
   description,
-  icon = '📍',
+  icon,
 }: LocationCardProps) {
   return (
     <Card className="border-border bg-card hover:bg-secondary/50 transition-colors">

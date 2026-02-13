@@ -11,35 +11,35 @@ export const images = {
   logoGold: "/techBoard-logo-gold.png",
   radcomm: "/RADCOMM.png",
   // Strategic Pillars
-  pillarBoardroom: "/images/pillars/boardroom.jpg",
-  pillarAI: "/images/pillars/ai-tech.jpg",
-  pillarGovernance: "/images/pillars/governance.jpg",
-  pillarSustainability: "/images/pillars/sustainability.jpg",
-  pillarCollaboration: "/images/pillars/collaboration.jpg",
+  pillarBoardroom: "/pillars/boardroom.png",
+  pillarAI: "/pillars/ai-tech.png",
+  pillarGovernance: "/pillars/governance.png",
+  pillarSustainability: "/pillars/sustainability.png",
+  pillarCollaboration: "/pillars/collaboration.png",
   // Global Reach (Cities)
-  cityDubai: "/images/cities/dubai.jpg",
-  cityAccra: "/images/cities/accra.jpg",
-  cityRiyadh: "/images/cities/riyadh.jpg",
-  cityNyc: "/images/cities/nyc.jpg",
+  cityDubai: "/cities/dubai.jpg",
+  cityAccra: "/cities/accra.jpeg",
+  cityRiyadh: "/cities/riyadh.jpeg",
+  cityNyc: "/cities/nyc.avif",
   // Backgrounds
-  masdarCity: "/images/backgrounds/masdar-city.jpg",
+  masdarCity: "/backgrounds/masdar-city.jpg",
   // About Page Specific
-  aboutPurpose: "/images/about/purpose.jpg",
-  aboutMembership: "/images/about/membership-preview.jpg",
-  aboutLeadership: "/images/about/leadership-visual.jpg",
-  aboutProfilePreview: "/images/about/profile-mockup.jpg",
+  aboutPurpose: "/about/purpose.jpg",
+  aboutMembership: "/about/membership-preview.jpg",
+  aboutLeadership: "/about/leadership-visual.jpg",
+  aboutProfilePreview: "/about/profile-mockup.jpg",
   // Projects Page Specific
-  projectRoundtables: "/images/projects/roundtables.jpg",
-  projectVirtual: "/images/projects/virtual-dialogues.jpg",
-  projectAI: "/images/projects/ai-energy.jpg",
-  projectMobility: "/images/projects/mobility.jpg",
-  projectFintech: "/images/projects/fintech.jpg",
-  projectNetworking: "/images/projects/networking.jpg",
+  projectRoundtables: "/projects/roundtables.jpg",
+  projectVirtual: "/projects/virtual-dialogues.jpg",
+  projectAI: "/projects/ai-energy.jpg",
+  projectMobility: "/projects/mobility.jpg",
+  projectFintech: "/projects/fintech.jpg",
+  projectNetworking: "/projects/networking.jpg",
   // Contact Page Specific
-  contactVisual: "/images/contact/visual.jpg",
+  contactVisual: "/contact/visual.jpg",
   // Home Page Expansion Specific
-  homeVision: "/images/home/vision-bg.jpg",
-  homeMembership: "/images/home/membership-bg.jpg",
+  homeVision: "/home/vision-bg.png",
+  homeMembership: "/home/membership-bg.png",
 };
 
 export default images;

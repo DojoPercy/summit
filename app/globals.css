@@ -100,4 +100,75 @@
   .smooth-transition {
     @apply transition-all duration-300 ease-in-out;
   }
+
+  @keyframes gold-wave {
+    0% {
+      transform: translateX(0) translateZ(0) scaleY(1);
+    }
+
+    50% {
+      transform: translateX(-25%) translateZ(0) scaleY(0.8);
+    }
+
+    100% {
+      transform: translateX(-50%) translateZ(0) scaleY(1);
+    }
+  }
+
+  @keyframes gold-translate {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(33.333%);
+    }
+  }
+
+  @keyframes gold-shimmer {
+    0% {
+      stop-color: #d4af37;
+      stop-opacity: 0.3;
+    }
+
+    50% {
+      stop-color: #f7e7ce;
+      stop-opacity: 0.8;
+    }
+
+    100% {
+      stop-color: #d4af37;
+      stop-opacity: 0.3;
+    }
+  }
+
+  @keyframes gold-sparkle {
+
+    0%,
+    100% {
+      opacity: 0.1;
+      transform: translateY(0) scale(0.8);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.2);
+    }
+  }
+
+  .animate-gold-wave {
+    animation: gold-wave 15s linear infinite;
+  }
+
+  .animate-gold-translate {
+    animation: gold-translate 20s linear infinite;
+  }
+
+  .animate-gold-shimmer {
+    animation: gold-shimmer 3s ease-in-out infinite;
+  }
+
+  .animate-gold-sparkle {
+    animation: gold-sparkle 3s ease-in-out infinite;
+  }
 }

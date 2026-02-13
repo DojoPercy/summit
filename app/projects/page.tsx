@@ -14,6 +14,7 @@ import SectionContainer from "@/components/section-container";
 import { Separator } from "@/components/ui/separator";
 import Reveal from "@/components/animation/reveal";
 import { motion as _motion } from "framer-motion";
+import GoldWave from "@/components/ui/GoldWave";
 
 const motion: any = _motion as any;
 
@@ -112,6 +113,9 @@ export default function Projects() {
       {/* Intro Section */}
       <SectionContainer className="py-24">
         <div className="max-w-4xl">
+          <div className=" -mb-24">
+            <GoldWave className="h-24 opacity-30" count={8} />
+          </div>
           <Reveal>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-8">
               Curated Leadership Ecosystems
@@ -125,7 +129,9 @@ export default function Projects() {
           </Reveal>
         </div>
       </SectionContainer>
-
+      <div className=" -mb-24">
+        <GoldWave className="h-24 opacity-30" count={8} />
+      </div>
       {/* Platforms Showcase - Alternating Layout */}
       <section className="bg-secondary/5 border-y border-border overflow-hidden">
         {platforms.map((platform, idx) => (
@@ -203,6 +209,9 @@ export default function Projects() {
                     </div>
                   </Reveal>
                 </div>
+              </div>{" "}
+              <div className=" -mb-24">
+                <GoldWave className="h-24 opacity-30" count={8} />
               </div>
             </SectionContainer>
           </div>

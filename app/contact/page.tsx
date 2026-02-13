@@ -15,6 +15,7 @@ import ContactForm from "@/components/contact-form";
 import { Separator } from "@/components/ui/separator";
 import Reveal from "@/components/animation/reveal";
 import { motion as _motion } from "framer-motion";
+import GoldWave from "@/components/ui/GoldWave";
 
 const motion: any = _motion as any;
 
@@ -86,7 +87,9 @@ export default function Contact() {
             </Reveal>
           </div>
         </div>
-
+        <div className=" -mb-24">
+          <GoldWave className="h-24 opacity-30" count={8} />
+        </div>
         {/* Contact Grid */}
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {contactMethods.map((method, idx) => (
@@ -116,6 +119,7 @@ export default function Contact() {
 
       {/* Visual Break Section - Atmospheric */}
       <section className="relative h-[60vh] min-h-[400px] overflow-hidden border-y border-border group">
+        
         <img
           src={images.contactVisual}
           alt="Contact Visual"
@@ -137,6 +141,7 @@ export default function Contact() {
 
       {/* Office Locations */}
       <SectionContainer className="py-24">
+        
         <div className="mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
             Global Offices
@@ -168,6 +173,9 @@ export default function Contact() {
             </Reveal>
           ))}
         </div>
+         <div className=" -mb-24">
+            <GoldWave className="h-24 opacity-30" count={8} />
+          </div>
       </SectionContainer>
 
       {/* Expression of Interest - The Signature Form */}
@@ -229,11 +237,15 @@ export default function Contact() {
               <ContactForm />
             </div>
           </div>
+          
         </SectionContainer>
       </section>
 
       {/* Signature Final Note */}
       <SectionContainer className="py-24 text-center">
+         <div className=" -mb-24">
+            <GoldWave className="h-24 opacity-30" count={8} />
+          </div>
         <Reveal>
           <p className="text-sm text-foreground/40 italic font-serif max-w-2xl mx-auto leading-relaxed">
             The Technology Boardroom is a RADCOMM Media initiative designed to

@@ -22,6 +22,7 @@ import {
   Network,
   Calendar,
 } from "lucide-react";
+import GoldWave from "@/components/ui/GoldWave";
 
 const motion: any = _motion as any;
 
@@ -107,6 +108,9 @@ export default function About() {
 
       {/* Intro Section - Purpose & Vision */}
       <SectionContainer className="py-24">
+        <div className=" -mb-24">
+          <GoldWave className="h-24 opacity-30" count={8} />
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           <div className="lg:col-span-12">
             <EditorialBlock
@@ -124,6 +128,7 @@ export default function About() {
             alt="Boardroom Vision"
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-50"
           />
+
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center space-y-4 max-w-2xl px-6">
               <span className="text-accent uppercase tracking-[0.3em] text-xs font-bold">
@@ -140,6 +145,9 @@ export default function About() {
       {/* Who We Convene - Persona Cards */}
       <section className="bg-secondary/5 py-24 border-y border-border">
         <SectionContainer>
+          <div className=" -mb-24">
+            <GoldWave className="h-24 opacity-30" count={8} />
+          </div>
           <div className="mb-16">
             <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
               Who We Convene
@@ -171,6 +179,9 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
           <div className="lg:col-span-5">
             <div className="sticky top-32 space-y-8">
+              <div className=" -mb-24">
+                <GoldWave className="h-24 opacity-30" count={8} />
+              </div>
               <div>
                 <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
                   Membership Benefits
@@ -235,6 +246,9 @@ export default function About() {
       {/* Executive Profile Preview - The "Value Visualized" */}
       <section className="bg-secondary/10 py-24 border-t border-border overflow-hidden">
         <SectionContainer>
+          <div className=" -mb-24">
+            <GoldWave className="h-24 opacity-30" count={8} />
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-6 space-y-8">
               <div>
@@ -294,7 +308,9 @@ export default function About() {
             className="w-full h-full object-cover"
           />
         </div>
-
+        <div className=" -mb-24">
+          <GoldWave className="h-24 opacity-30" count={8} />
+        </div>
         <SectionContainer className="relative z-10 text-center">
           <Reveal>
             <div className="inline-block px-4 py-1 border border-accent/30 rounded-full mb-8">

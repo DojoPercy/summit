@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion as _motion } from "framer-motion";
+import { GoldWave } from "./ui/GoldWave";
 import SectionContainer from "./section-container";
 
 const motion: any = _motion as any;
@@ -9,6 +10,9 @@ const motion: any = _motion as any;
 export default function ExecutiveManifesto() {
   return (
     <SectionContainer id="manifesto" className="py-24 md:py-32">
+      <div className="mt-16 -mb-24">
+        <GoldWave className="h-24 opacity-30" count={8} />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
         {/* Left Column: The Hook */}
         <div className="lg:col-span-5 space-y-8">
@@ -77,6 +81,7 @@ export default function ExecutiveManifesto() {
           </motion.div>
         </div>
       </div>
+      
     </SectionContainer>
   );
 }

@@ -11,6 +11,7 @@ import Reveal from "@/components/animation/reveal";
 import { motion as _motion } from "framer-motion";
 import images from "@/lib/images";
 import { Globe, Users, TrendingUp, ShieldCheck } from "lucide-react";
+import { GoldWave } from "@/components/ui/GoldWave";
 
 const motion: any = _motion as any;
 
@@ -118,6 +119,10 @@ export default function Home() {
             alt="Strategic Vision"
             className="w-full h-full object-cover grayscale opacity-10"
           />
+          <GoldWave
+            className="absolute top-0 h-40 opacity-20 rotate-180"
+            count={8}
+          />
         </div>
         <SectionContainer className="relative z-10">
           <EditorialBlock
@@ -130,6 +135,9 @@ export default function Home() {
 
       {/* Strategic Pillars - Staggered Grid */}
       <SectionContainer className="py-24" id="pillars">
+        <div className=" -mb-24">
+          <GoldWave className="h-24 opacity-30" count={8} />
+        </div>
         <div className="mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6 text-pretty">
             Strategic Pillars
@@ -162,8 +170,11 @@ export default function Home() {
       </SectionContainer>
 
       {/* Impact by the Numbers - Authority metrics */}
-      <section className="bg-secondary/10 py-24 border-y border-border">
-        <SectionContainer>
+      <section className="relative bg-secondary/10 py-24 border-y border-border overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none opacity-50">
+          <GoldWave className="h-full" count={15} opacity={0.8} />
+        </div>
+        <SectionContainer className="relative z-10">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
             {stats.map((stat, idx) => (
               <Reveal key={stat.label} delay={idx * 0.1}>
@@ -199,7 +210,6 @@ export default function Home() {
               hubs, ensuring diversity of thought and cross-border innovation.
             </p>
           </div>
-
           <div className="space-y-32">
             {cities.map((city, idx) => (
               <div
@@ -228,6 +238,10 @@ export default function Home() {
                 </div>
 
                 <div className="w-full lg:w-1/2 space-y-6">
+                  {" "}
+                  <div className=" -mb-24">
+                    <GoldWave className="h-14 opacity-30" count={8} />
+                  </div>
                   <div className="inline-block border-l-2 border-accent pl-4 mb-2">
                     <span className="text-accent uppercase tracking-widest text-sm font-bold">
                       Impact Node

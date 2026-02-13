@@ -4,7 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { usePathname } from 'next/navigation'
-import { motion } from 'framer-motion'
+import { motion as _motion } from 'framer-motion'
+
+// Workaround for framer-motion + TS intrinsic element typing with React 19
+const motion: any = _motion as any
 
 const navigation = [
   { name: 'Home', href: '/' },

@@ -51,7 +51,7 @@ export default function HeroSection() {
           Scroll to Explore
         </span>
         <motion.div
-          className="w-[1px] h-12 bg-gradient-to-b from-accent to-transparent"
+          className="w-[2px] h-12 bg-gradient-to-b from-accent to-transparent"
           animate={{
             scaleY: [0, 1, 0.5],
             opacity: [0, 1, 0],

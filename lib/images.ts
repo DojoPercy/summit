@@ -23,6 +23,11 @@ export const images = {
   cityNyc: "/images/cities/nyc.jpg",
   // Backgrounds
   masdarCity: "/images/backgrounds/masdar-city.jpg",
+  // About Page Specific
+  aboutPurpose: "/images/about/purpose.jpg",
+  aboutMembership: "/images/about/membership-preview.jpg",
+  aboutLeadership: "/images/about/leadership-visual.jpg",
+  aboutProfilePreview: "/images/about/profile-mockup.jpg",
 };
 
 export default images;

@@ -1,24 +1,25 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { Button } from './ui/button'
-import { usePathname } from 'next/navigation'
-import { motion as _motion } from 'framer-motion'
-import images from '@/lib/images'
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "./ui/button";
+import { usePathname } from "next/navigation";
+import { motion as _motion } from "framer-motion";
+import images from "@/lib/images";
+import { ThemeToggle } from "./theme-toggle";
 
 // Workaround for framer-motion + TS intrinsic element typing with React 19
-const motion: any = _motion as any
+const motion: any = _motion as any;
 
 const navigation = [
-  { name: 'Homepage', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact Us', href: '/contact' },
-]
+  { name: "Homepage", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact Us", href: "/contact" },
+];
 
 export default function Header() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <motion.header
@@ -29,13 +30,16 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 py-6 flex items-center justify-between sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 font-display text-2xl font-bold hover:text-primary transition-colors">
+        <Link
+          href="/"
+          className="flex items-center space-x-2 font-display text-2xl font-bold hover:text-primary transition-colors"
+        >
           <div className="relative h-10 w-36 sm:w-48">
             <Image
               src={images.logoGold}
               alt="Technology Boardroom"
               fill
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: "contain" }}
               priority
             />
           </div>
@@ -49,8 +53,8 @@ export default function Header() {
               href={item.href}
               className={`text-sm font-medium transition-colors hover:text-accent ${
                 pathname === item.href
-                  ? 'text-accent'
-                  : 'text-foreground/70 hover:text-foreground'
+                  ? "text-accent"
+                  : "text-foreground/70 hover:text-foreground"
               }`}
             >
               {item.name}
@@ -58,10 +62,15 @@ export default function Header() {
           ))}
         </div>
 
+        {/* Theme Toggle */}
+        <div className="hidden md:flex items-center ml-4">
+          <ThemeToggle />
+        </div>
+
         {/* CTA Button */}
         <Button
           asChild
-          className="ml-auto bg-accent text-accent-foreground hover:bg-primary"
+          className="ml-4 bg-accent text-accent-foreground hover:bg-primary"
         >
           <Link href="/contact">Apply Now</Link>
         </Button>
@@ -69,5 +78,5 @@ export default function Header() {
 
       {/* Mobile Navigation - would be expanded with sheet/dropdown */}
     </motion.header>
-  )
+  );
 }

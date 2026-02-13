@@ -47,8 +47,27 @@
   }
   html {
     @apply bg-background text-foreground;
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground font-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent via-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  
+  .card-hover:hover {
+    @apply shadow-lg shadow-accent/10 border-accent/30;
+  }
+  
+  .smooth-transition {
+    @apply transition-all duration-300 ease-in-out;
   }
 }

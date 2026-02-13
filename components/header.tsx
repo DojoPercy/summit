@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from './ui/button'
 import { usePathname } from 'next/navigation'
 import { motion } from 'framer-motion'
@@ -24,9 +25,16 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 py-6 flex items-center justify-between sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 font-display text-2xl font-bold text-accent hover:text-primary transition-colors">
-          <span className="text-3xl">⊕</span>
-          <span className="hidden sm:inline">The Boardroom</span>
+        <Link href="/" className="flex items-center space-x-2 font-display text-2xl font-bold hover:text-primary transition-colors">
+          <div className="relative h-10 w-36 sm:w-48">
+            <Image
+              src="/TECH BOARDROOM LOGO WHITE.png"
+              alt="Technology Boardroom"
+              fill
+              style={{ objectFit: 'contain' }}
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

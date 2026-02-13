@@ -27,13 +27,14 @@ export default function PageHero({
 }: PageHeroProps) {
   return (
     <section
-      className="relative min-h-[70vh] flex items-center justify-center overflow-hidden border-b border-border"
+      className="relative min-h-[87vh] flex items-center justify-center overflow-hidden border-b border-border"
       style={
         backgroundImage
           ? {
-              backgroundImage: `url(${backgroundImage})`,
+              backgroundImage: `url("${backgroundImage}")`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
             }
           : {}
       }

@@ -1,4 +1,5 @@
 import PageHero from '@/components/page-hero'
+import HeroSection from '@/components/hero/HeroSection'
 import SectionContainer from '@/components/section-container'
 import PillarCard from '@/components/pillar-card'
 import LocationCard from '@/components/location-card'
@@ -59,13 +60,8 @@ const locations = [
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <PageHero
-        headline="Strategic Leadership for the Technology Age"
-        subtext="An invitation-only council of executives, innovators, and thought leaders shaping the future of technology, policy, and business strategy."
-        cta={{ text: 'Join the Conversation', href: '/contact' }}
-        secondaryCta={{ text: 'Learn More', href: '#about' }}
-      />
+      {/* Fullscreen Hero Section */}
+      <HeroSection />
 
       {/* Platform Description */}
       <SectionContainer className="space-y-12">

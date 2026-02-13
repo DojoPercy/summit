@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 const footerLinks = {
   company: [
@@ -24,8 +25,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="font-display text-xl font-bold text-accent">
-              The Boardroom
+            <div className="flex items-center gap-4">
+              <div className="relative h-10 w-36">
+                <Image src="/TECH BOARDROOM LOGO WHITE.png" alt="Technology Boardroom" fill style={{ objectFit: 'contain' }} />
+              </div>
             </div>
             <p className="text-sm text-foreground/60">
               An invitation-only executive council for strategic leadership dialogue.
@@ -83,12 +86,12 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-border mt-12 pt-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <p className="text-xs text-foreground/50">
-              © 2024 The Technology Boardroom. All rights reserved.
-            </p>
-            <p className="text-xs text-foreground/50 mt-4 md:mt-0">
-              Powered by RADCOMM Group
-            </p>
+            <div className="flex items-center gap-4">
+              <p className="text-xs text-foreground/50">© 2024 The Technology Boardroom. All rights reserved.</p>
+              <div className="hidden sm:block h-6 w-28 relative">
+                <Image src="/RADCOMM.png" alt="RADCOMM" fill style={{ objectFit: 'contain' }} />
+              </div>
+            </div>
           </div>
         </div>
       </div>

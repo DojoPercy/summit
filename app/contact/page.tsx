@@ -1,4 +1,5 @@
 import PageHero from '@/components/page-hero'
+import images from '@/lib/images'
 import SectionContainer from '@/components/section-container'
 import ContactCard from '@/components/contact-card'
 import ContactForm from '@/components/contact-form'
@@ -42,6 +43,7 @@ export default function Contact() {
       <PageHero
         headline="Get in Touch"
         subtext="Reach out to learn more about membership, participate in our platforms, or explore partnership opportunities with The Technology Boardroom."
+        backgroundImage={images.hero2}
       />
 
       {/* Contact Methods */}

@@ -1,4 +1,5 @@
 import PageHero from '@/components/page-hero'
+import images from '@/lib/images'
 import SectionContainer from '@/components/section-container'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
@@ -81,6 +82,7 @@ export default function Projects() {
       <PageHero
         headline="Platforms & Experiences"
         subtext="Our curated portfolio of executive platforms, forums, and dialogues designed for strategic leadership engagement."
+        backgroundImage={images.hero3}
       />
 
       {/* Projects Grid */}

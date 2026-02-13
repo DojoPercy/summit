@@ -4,6 +4,7 @@ import EditorialBlock from '@/components/editorial-block'
 import Reveal from '@/components/animation/reveal'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Separator } from '@/components/ui/separator'
+import images from '@/lib/images'
 
 const roles = [
   'Chief Technology Officers',
@@ -50,6 +51,7 @@ export default function About() {
       <PageHero
         headline="About The Technology Boardroom"
         subtext="A premier executive council dedicated to strategic dialogue on technology, innovation, and business leadership."
+        backgroundImage={images.about}
       />
 
       {/* Intro Section */}

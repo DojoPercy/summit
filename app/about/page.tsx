@@ -102,7 +102,7 @@ export default function About() {
       <PageHero
         headline="About The Technology Boardroom"
         subtext="The Technology Boardroom convenes Chief Information Officers (CIOs), Chief Technology Officers (CTOs), Chief Digital Officers (CDOs), and Public Sector Technology Leaders from across the Middle East, Africa, and global markets."
-        backgroundImage={images.about}
+        backgroundImage={images.aboutHero}
       />
 
       {/* Intro Section - Purpose & Vision */}

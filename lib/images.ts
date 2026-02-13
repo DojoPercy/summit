@@ -24,11 +24,13 @@ export const images = {
   // Backgrounds
   masdarCity: "/backgrounds/masdar-city.jpg",
   // About Page Specific
+  aboutHero: "/about/about-hero.png",
   aboutPurpose: "/about/purpose.png",
   aboutMembership: "/about/membership-preview.png",
   aboutLeadership: "/about/leadership-visual.png",
   aboutProfilePreview: "/about/profile-mockup.png",
   // Projects Page Specific
+  projectHero: "/projects/project-hero.png",
   projectRoundtables: "/projects/roundtables.png",
   projectVirtual: "/projects/virtual-dialogues.png",
   projectAI: "/projects/ai-energy.png",
@@ -36,6 +38,7 @@ export const images = {
   projectFintech: "/projects/fintech.png",
   projectNetworking: "/projects/networking.png",
   // Contact Page Specific
+  contactHero: "/contact/contact-hero.png",
   contactVisual: "/contact/visual.png",
   // Home Page Expansion Specific
   homeVision: "/home/vision-bg.png",

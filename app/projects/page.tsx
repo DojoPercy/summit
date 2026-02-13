@@ -106,7 +106,7 @@ export default function Projects() {
       <PageHero
         headline="Platforms & Experiences"
         subtext="Invite-only executive platforms, roundtables, and virtual dialogues designed to advance strategic technology leadership, policy, and innovation."
-        backgroundImage={images.projects}
+        backgroundImage={images.projectHero}
       />
 
       {/* Intro Section */}

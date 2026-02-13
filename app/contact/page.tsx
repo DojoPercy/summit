@@ -66,7 +66,7 @@ export default function Contact() {
       <PageHero
         headline="Contact Us"
         subtext="Participation in The Technology Boardroom is by invitation or nomination only. For membership, partnership, media, and programme enquiries, please reach out to our executive team."
-        backgroundImage={images.contact}
+        backgroundImage={images.contactHero}
       />
 
       {/* Intro - Strategic Presence */}

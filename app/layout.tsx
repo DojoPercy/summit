@@ -22,7 +22,12 @@ export const metadata: Metadata = {
   description:
     "An invitation-only executive council for strategic leadership dialogue and innovation.",
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.ico', type: 'image/x-icon' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
   openGraph: {
     title: "The Technology Boardroom",

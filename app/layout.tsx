@@ -21,7 +21,9 @@ export const metadata: Metadata = {
   title: "The Technology Boardroom | Executive Leadership Platform",
   description:
     "An invitation-only executive council for strategic leadership dialogue and innovation.",
-  generator: "v0.app",
+  icons: {
+    icon: '/favicon.ico',
+  },
   openGraph: {
     title: "The Technology Boardroom",
     description: "Strategic leadership platform for executives and innovators",

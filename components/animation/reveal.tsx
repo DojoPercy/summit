@@ -1,7 +1,9 @@
- 'use client'
+'use client'
 
-import { motion } from 'framer-motion'
+import { motion as _motion } from 'framer-motion'
 import { ReactNode } from 'react'
+
+const motion: any = _motion as any
 
 interface RevealProps {
   children: ReactNode

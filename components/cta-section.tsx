@@ -1,8 +1,10 @@
- 'use client'
+'use client'
 
-import { motion } from 'framer-motion'
+import { motion as _motion } from 'framer-motion'
 import { Button } from './ui/button'
 import Link from 'next/link'
+
+const motion: any = _motion as any
 
 interface CTASectionProps {
   headline: string

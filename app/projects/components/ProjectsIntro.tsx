@@ -11,13 +11,16 @@ export default function ProjectsIntro() {
         <GoldWaveDivider />
         <Reveal>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-8">
-            Curated Leadership Ecosystems
+            Summit Programme & Awards
           </h2>
           <div className="h-1 w-24 bg-accent mb-12" />
           <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed font-serif">
-            Our platforms are engineered to create meaningful dialogue and
-            strategic connection among technology executives, policy makers,
-            and global innovation leaders.
+            The Hotelier Africa Leadership Summit 2026 features four high-level
+            sessions — the Executive Leadership Conference, CEO & GM Roundtable,
+            Hospitality Investment Dialogue, and Executive Networking Reception —
+            alongside the prestigious Hotelier Africa Leadership Awards, spanning
+            40 categories across 3 award tiers, and the unveiling of Africa&apos;s
+            Top 50 Hotel General Managers.
           </p>
         </Reveal>
       </div>

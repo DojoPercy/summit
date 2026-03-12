@@ -6,9 +6,9 @@ import Reveal from "@/components/animation/reveal";
 import images from "@/lib/images";
 
 const pillars = [
-  { value: "Global", label: "Convene" },
-  { value: "Trusted", label: "Environment" },
-  { value: "Strategic", label: "Impact" },
+  { value: "Pan-Africa", label: "Reach" },
+  { value: "Award-Winning", label: "Excellence" },
+  { value: "2nd Edition", label: "2026" },
 ];
 
 export default function VisionStatement() {
@@ -24,19 +24,21 @@ export default function VisionStatement() {
       <GoldWaveDivider />
       <SectionContainer className="relative z-10 text-center">
         <Reveal>
-          <div className="inline-block px-4 py-1 border border-accent/30 rounded-full mb-8">
-            <span className="text-accent text-xs uppercase tracking-widest font-bold">
-              The Vision 2025
+          <div className="flex justify-center mb-8">
+            <span className="hotel-tag">
+              <span className="opacity-60">&#9670;</span>
+              The Vision 2026
+              <span className="opacity-60">&#9670;</span>
             </span>
           </div>
-          <h3 className="font-display text-4xl md:text-6xl font-bold text-foreground text-pretty mb-12 max-w-4xl mx-auto leading-tight">
-            Advancing strategic technology leadership at the board level.
+          <h3 className="font-headline text-4xl md:text-6xl font-bold text-foreground text-pretty mb-12 max-w-4xl mx-auto leading-tight">
+            Inspiring excellence, innovation, and sustainable hospitality leadership across Africa.
           </h3>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 pt-12 border-t border-border/50 max-w-3xl mx-auto">
             {pillars.map(({ value, label }) => (
               <div key={value} className="text-center">
-                <p className="text-accent text-3xl font-bold font-display uppercase tracking-tighter">
+                <p className="text-accent text-3xl font-bold font-headline uppercase tracking-tighter">
                   {value}
                 </p>
                 <p className="text-xs text-foreground/40 uppercase tracking-widest mt-1">

@@ -11,14 +11,18 @@ export default function ContactIntro() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         <div className="lg:col-span-8">
           <Reveal>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-8">
-              Global Executive Engagement
+            <h2 className="font-headline text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Get in Touch
             </h2>
-            <div className="h-1 w-24 bg-accent mb-12" />
+            <div className="flex items-center gap-3 mb-12">
+              <div className="h-px w-12 bg-accent" />
+              <span className="text-accent text-[10px]">&#9670;</span>
+              <div className="h-px w-6 bg-accent/40" />
+            </div>
             <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed font-serif">
-              The Technology Boardroom maintains a global footprint to serve
-              as the bridge between technology leadership, boardrooms, and
-              public sector policy across regions.
+              For partnerships, sponsorship opportunities, delegate registration,
+              award nominations, media inquiries, or event participation, please
+              feel free to contact the Hotelier Africa team.
             </p>
           </Reveal>
         </div>
@@ -29,7 +33,7 @@ export default function ContactIntro() {
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {contactMethods.map((method, idx) => (
           <Reveal key={method.type} delay={idx * 0.05}>
-            <div className="group h-full p-8 border border-border bg-card rounded-sm hover:border-accent/40 transition-all duration-500">
+            <div className="group h-full p-8 border border-border bg-card hover:border-accent/50 hover:bg-accent/[0.03] transition-all duration-500">
               <div className="mb-6 group-hover:scale-110 transition-transform duration-500">
                 {method.icon}
               </div>

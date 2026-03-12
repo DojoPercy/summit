@@ -22,7 +22,7 @@ const motion: any = _motion as any;
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
+  { name: "Programme & Awards", href: "/projects" },
   { name: "Contact Us", href: "/contact" },
 ];
 
@@ -31,21 +31,24 @@ export default function Header() {
 
   return (
     <motion.header
-      className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
+      className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border"
       initial={{ y: -8, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.35 }}
     >
+      {/* Thin gold accent bar at very top */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-accent to-transparent w-full" />
       <nav className="mx-auto max-w-7xl px-4 py-6 flex items-center justify-between sm:px-6 lg:px-8">
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center space-x-2 font-display text-2xl font-bold hover:text-primary transition-colors"
         >
-          <div className="relative h-10 w-36 sm:w-48">
+          <div className="relative h-20 w-60 sm:w-48">
             <Image
               src={images.logoGold}
-              alt="Technology Boardroom"
+              className="scale-150"
+              alt="Hotelier Africa"
               fill
               style={{ objectFit: "contain" }}
               priority
@@ -59,10 +62,10 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`text-sm font-medium transition-colors hover:text-accent ${
+              className={`text-xs uppercase tracking-widest font-bold transition-colors relative pb-1 ${
                 pathname === item.href
-                  ? "text-accent"
-                  : "text-foreground/70 hover:text-foreground"
+                  ? "text-accent after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-accent"
+                  : "text-foreground/60 hover:text-foreground"
               }`}
             >
               {item.name}
@@ -118,7 +121,7 @@ export default function Header() {
                     asChild
                     className="w-full bg-accent text-accent-foreground"
                   >
-                    <Link href="/contact">Apply Now</Link>
+                    <Link href="/contact">Register Now</Link>
                   </Button>
                 </div>
               </div>
@@ -131,7 +134,7 @@ export default function Header() {
           asChild
           className="hidden md:flex ml-4 bg-accent text-accent-foreground hover:bg-primary"
         >
-          <Link href="/contact">Apply Now</Link>
+          <Link href="/contact">Register Now</Link>
         </Button>
       </nav>
     </motion.header>

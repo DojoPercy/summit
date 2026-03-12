@@ -6,7 +6,7 @@ const footerLinks = {
   company: [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Programme & Awards', href: '/projects' },
   ],
   legal: [
     { name: 'Privacy', href: '#' },
@@ -14,25 +14,27 @@ const footerLinks = {
     { name: 'Code of Conduct', href: '#' },
   ],
   contact: [
-    { label: 'Email', value: 'info@thetechnologyboardroom.com' },
-    { label: 'Phone', value: '+971 55 790 9643' },
+    { label: 'Email', value: 'marcom@sbfafrica.com' },
+    { label: 'Phone', value: '+233 20 238 4549' },
   ],
 }
 
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-background">
+      {/* Gold accent bar at top of footer */}
+      <div className="h-[2px] bg-gradient-to-r from-transparent via-accent/60 to-transparent w-full" />
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <div className="relative h-10 w-36">
-                <Image src={images.logoGold} alt="Technology Boardroom" fill style={{ objectFit: 'contain' }} />
+                <Image src={images.logoGold} alt="Hotelier Africa" fill style={{ objectFit: 'contain' }} />
               </div>
             </div>
             <p className="text-sm text-foreground/60">
-              An invitation-only executive council for strategic leadership dialogue.
+              Africa's premier hospitality leadership summit and awards platform.
             </p>
           </div>
 
@@ -88,11 +90,8 @@ export default function Footer() {
         <div className="border-t border-border mt-12 pt-12">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="flex flex-col sm:flex-row sm:items-center sm:gap-6">
-              <p className="text-xs text-foreground/50">© 2024 The Technology Boardroom. All rights reserved.</p>
-              <div className="hidden sm:block h-6 w-28 relative">
-                <Image src="/RADCOMM.png" alt="RADCOMM" fill style={{ objectFit: 'contain' }} />
-              </div>
-              <div className="text-xs text-foreground/60 mt-2 sm:mt-0">Powered by RADCOMM Group</div>
+              <p className="text-xs text-foreground/50">© 2026 Hotelier Africa. All rights reserved.</p>
+              <div className="text-xs text-foreground/60 mt-2 sm:mt-0">Organised by SBF Africa</div>
             </div>
           </div>
         </div>

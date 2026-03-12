@@ -22,12 +22,13 @@ export default function MembershipBenefits() {
             <GoldWaveDivider />
             <div>
               <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Membership Benefits
+                Benefits & Sponsorship
               </h2>
               <div className="h-1 w-20 bg-accent mb-8" />
               <p className="text-xl text-foreground/60 leading-relaxed font-serif">
-                A comprehensive ecosystem designed to amplify executive
-                influence, visibility, and strategic insight.
+                Participants gain access to strategic insights, executive
+                networks, investment connections, industry recognition — and a
+                powerful platform for sponsors to engage Africa&apos;s hospitality community.
               </p>
             </div>
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden border border-border shadow-2xl">
@@ -38,8 +39,8 @@ export default function MembershipBenefits() {
               />
               <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background to-transparent">
                 <p className="text-white text-sm font-medium italic">
-                  &ldquo;Visibility is earned through insight, experience, and
-                  contribution.&rdquo;
+                  &ldquo;Be part of the conversations shaping the future of
+                  hospitality leadership across Africa.&rdquo;
                 </p>
               </div>
             </div>

@@ -13,6 +13,7 @@ const config: Config = {
       fontFamily: {
         serif: ['var(--font-playfair)', 'var(--font-lora)', 'serif'],
         display: ['var(--font-playfair)', 'serif'],
+        headline: ['Cormorant Garamond', 'var(--font-playfair)', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

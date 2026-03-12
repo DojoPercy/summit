@@ -11,8 +11,8 @@ export default function StrategicPillars() {
     <SectionContainer className="py-24" id="pillars">
       <GoldWaveDivider />
       <SectionHeading
-        title="Strategic Pillars"
-        subtitle="Our platform is built on five core pillars that define meaningful engagement for technology leaders, ensuring every dialogue drives tangible value."
+        title="Summit Focus Areas"
+        subtitle="The summit is built on five core pillars that define meaningful engagement for Africa's hospitality leaders, ensuring every dialogue drives tangible industry value."
         subtitleClassName="max-w-3xl"
       />
       <div className="grid grid-cols-1 md:grid-cols-6 gap-6">

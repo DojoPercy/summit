@@ -12,8 +12,8 @@ export default function Contact() {
   return (
     <>
       <PageHero
-        headline="Contact Us"
-        subtext="Participation in The Technology Boardroom is by invitation or nomination only. For membership, partnership, media, and programme enquiries, please reach out to our executive team."
+        headline="Contact & Register"
+        subtext="For delegate registration, sponsorship, award nominations, partnerships, and media enquiries, please contact our team. We look forward to hearing from you."
         backgroundImage={images.contactHero}
       />
       <ContactIntro />

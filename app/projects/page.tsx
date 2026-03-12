@@ -11,8 +11,8 @@ export default function Projects() {
   return (
     <>
       <PageHero
-        headline="Platforms & Experiences"
-        subtext="Invite-only executive platforms, roundtables, and virtual dialogues designed to advance strategic technology leadership, policy, and innovation."
+        headline="Summit Programme & Awards"
+        subtext="High-level discussions, CEO roundtables, investment dialogues, executive networking, and the prestigious Hotelier Africa Leadership Awards — all in one premier event."
         backgroundImage={images.projectHero}
       />
       <ProjectsIntro />

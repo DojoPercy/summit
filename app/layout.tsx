@@ -18,9 +18,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "The Technology Boardroom | Executive Leadership Platform",
+  title: "Hotelier Africa Leadership Summit & Awards 2026",
   description:
-    "An invitation-only executive council for strategic leadership dialogue and innovation.",
+    "The 2nd Hotelier Africa Leadership Summit & Awards 2026 – Africa's premier continental platform for hospitality leadership, innovation, and excellence.",
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "The Technology Boardroom",
-    description: "Strategic leadership platform for executives and innovators",
+    title: "Hotelier Africa Leadership Summit & Awards 2026",
+    description: "Africa's premier hospitality leadership summit and awards platform.",
     type: "website",
   },
 };
@@ -41,7 +41,7 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  themeColor: "#0a0a0a",
+  themeColor: "#0f0d0b",
 };
 
 export default function RootLayout({

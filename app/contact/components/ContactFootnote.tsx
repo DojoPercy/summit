@@ -10,9 +10,9 @@ export default function ContactFootnote() {
       <GoldWaveDivider />
       <Reveal>
         <p className="text-sm text-foreground/40 italic font-serif max-w-2xl mx-auto leading-relaxed">
-          The Technology Boardroom is a RADCOMM Media initiative designed to
-          foster high-level technology governance and sustainable digital
-          transformation across emerging economies.
+          The Hotelier Africa Leadership Summit & Awards is organised by a leading
+          communications and business events platform dedicated to promoting
+          leadership, innovation, and excellence across Africa&apos;s key industries.
         </p>
       </Reveal>
     </SectionContainer>

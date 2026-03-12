@@ -55,8 +55,11 @@ export default function PremiumPillar({
           viewport={{ once: true }}
           transition={{ delay: index * 0.1 + 0.3, duration: 0.6 }}
         >
-          <div className="h-0.5 w-8 bg-accent mb-4 transform origin-left transition-all duration-500 group-hover:w-16" />
-          <h3 className="font-display text-2xl font-bold text-white mb-3 leading-tight">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="h-px w-8 bg-accent transform origin-left transition-all duration-500 group-hover:w-14" />
+            <span className="text-accent text-[8px]">&#9670;</span>
+          </div>
+          <h3 className="font-headline text-2xl font-bold text-white mb-3 leading-tight">
             {title}
           </h3>
           <p className="text-white/70 text-sm leading-relaxed max-w-[280px] transform transition-all duration-500 group-hover:text-white">

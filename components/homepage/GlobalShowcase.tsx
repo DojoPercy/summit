@@ -10,8 +10,8 @@ export default function GlobalShowcase() {
     <section className="py-24" id="locations">
       <SectionContainer>
         <SectionHeading
-          title="Global Reach, Local Impact"
-          subtitle="The Technology Boardroom operates across key global and regional hubs, ensuring diversity of thought and cross-border innovation."
+          title="Why This Summit Matters"
+          subtitle="Africa is one of the world's fastest growing hospitality frontiers. Sustainable industry growth requires strong leadership, innovation, strategic collaboration, and recognition of excellence."
           divider
           centered
           subtitleClassName="max-w-3xl"
@@ -44,13 +44,12 @@ export default function GlobalShowcase() {
               </div>
 
               <div className="w-full lg:w-1/2 space-y-6">
-                <GoldWaveDivider className="h-14 opacity-30" />
-                <div className="inline-block border-l-2 border-accent pl-4 mb-2">
-                  <span className="text-accent uppercase tracking-widest text-sm font-bold">
-                    Impact Node
-                  </span>
-                </div>
-                <h3 className="text-3xl lg:text-4xl font-display font-bold text-foreground">
+                <span className="hotel-tag mb-4 inline-flex">
+                  <span className="opacity-60">&#9670;</span>
+                  Key Reason
+                  <span className="opacity-60">&#9670;</span>
+                </span>
+                <h3 className="text-3xl lg:text-4xl font-headline font-bold text-foreground mt-4">
                   {city.focus}
                 </h3>
                 <p className="text-lg text-foreground/70 leading-relaxed font-serif italic line-clamp-4">

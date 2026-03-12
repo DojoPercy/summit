@@ -10,6 +10,9 @@ interface PlatformCardProps {
   description: string;
   imagePath: string;
   details: string[];
+  detailsLabel?: string;
+  ctaLabel?: string;
+  label?: string;
   index: number;
 }
 
@@ -19,6 +22,9 @@ export default function PlatformCard({
   description,
   imagePath,
   details,
+  detailsLabel = "Key Focus Areas",
+  ctaLabel = "Enquire about this session",
+  label,
   index,
 }: PlatformCardProps) {
   const isReversed = index % 2 !== 0;
@@ -40,7 +46,7 @@ export default function PlatformCard({
                 <div className="absolute bottom-8 left-8 flex items-center gap-4">
                   <div className="p-3 bg-accent text-white rounded-xs">{icon}</div>
                   <span className="text-white text-xs uppercase tracking-[0.3em] font-bold">
-                    Platform {index + 1}
+                    {label ?? `Session ${index + 1}`}
                   </span>
                 </div>
               </div>
@@ -62,7 +68,7 @@ export default function PlatformCard({
               <div className="h-px w-full bg-border/50 my-10" />
               <div className="space-y-6">
                 <p className="text-xs uppercase tracking-[0.4em] text-accent font-bold">
-                  Key Focus Areas
+                  {detailsLabel}
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                   {details.map((detail, dIdx) => (
@@ -74,9 +80,12 @@ export default function PlatformCard({
                 </ul>
               </div>
               <div className="pt-10">
-                <button className="text-accent uppercase tracking-widest text-xs font-bold border-b border-accent pb-1 hover:text-accent/70 hover:border-accent/70 transition-all">
-                  Inquire about this platform
-                </button>
+                <a
+                  href="/contact"
+                  className="text-accent uppercase tracking-widest text-xs font-bold border-b border-accent pb-1 hover:text-accent/70 hover:border-accent/70 transition-all"
+                >
+                  {ctaLabel}
+                </a>
               </div>
             </Reveal>
           </div>

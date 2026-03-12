@@ -38,11 +38,15 @@ export default function FeatureImageBanner({
         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-50"
       />
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center space-y-4 max-w-2xl px-6">
-          <span className="text-accent uppercase tracking-[0.3em] text-xs font-bold">
-            {tagline}
-          </span>
-          <h3 className="text-3xl md:text-4xl font-display font-medium text-white italic">
+        <div className="text-center space-y-5 max-w-2xl px-6">
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-px w-8 bg-accent/60" />
+            <span className="text-accent uppercase tracking-[0.4em] text-[10px] font-bold">
+              {tagline}
+            </span>
+            <div className="h-px w-8 bg-accent/60" />
+          </div>
+          <h3 className="text-3xl md:text-4xl font-headline font-bold text-white italic">
             {headlineNode ?? headline}
           </h3>
         </div>

@@ -15,16 +15,16 @@ export default function ExecutiveProfile() {
           <div className="lg:col-span-6 space-y-8">
             <div>
               <span className="text-accent uppercase tracking-[0.4em] text-xs font-bold mb-4 block">
-                Executive Ecosystem
+                Awards & Recognition
               </span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-                The Executive <br />
-                Digital Profile
+              <h2 className="font-headline text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Hotelier Africa <br />
+                Leadership Awards
               </h2>
               <p className="text-xl text-foreground/70 leading-relaxed">
-                Every member receives a dedicated digital profile, designed to
-                position leadership expertise at the heart of the global
-                technology conversation.
+                The awards honour individuals and organisations who have
+                demonstrated exceptional contributions to advancing Africa&apos;s
+                hospitality sector — across 40 prestigious award categories.
               </p>
             </div>
             <div className="space-y-6">

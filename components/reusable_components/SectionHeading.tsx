@@ -19,21 +19,18 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={cn("mb-16", centered && "text-center", className)}>
-      <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+      <h2 className="font-headline text-4xl md:text-5xl font-bold text-foreground mb-4 leading-tight">
         {title}
       </h2>
-      {divider && (
-        <div
-          className={cn(
-            "h-1 w-24 bg-accent mb-8",
-            centered && "mx-auto"
-          )}
-        />
-      )}
+      <div className={cn("flex items-center gap-3 mb-6", centered && "justify-center")}>
+        <div className="h-px w-12 bg-accent" />
+        <span className="text-accent text-[10px]">&#9670;</span>
+        <div className="h-px w-6 bg-accent/40" />
+      </div>
       {subtitle && (
         <p
           className={cn(
-            "text-xl text-foreground/60 max-w-2xl leading-relaxed",
+            "text-lg text-foreground/60 max-w-2xl leading-relaxed",
             centered && "mx-auto",
             subtitleClassName
           )}

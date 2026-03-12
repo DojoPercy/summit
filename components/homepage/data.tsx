@@ -1,89 +1,89 @@
 import images from "@/lib/images";
-import { Globe, Users, TrendingUp, ShieldCheck } from "lucide-react";
+import { Globe, Users, TrendingUp, Award } from "lucide-react";
 
 export const pillars = [
   {
-    title: "Board-Level Technology Leadership",
+    title: "Leadership Excellence in Hospitality",
     description:
-      "Elevating technology conversations from IT execution to boardroom strategy, governance, and enterprise-wide impact.",
+      "Elevating hotel management conversations to strategic boardroom level, celebrating and strengthening leadership excellence across Africa's hospitality sector.",
     imagePath: images.pillarBoardroom,
   },
   {
-    title: "Digital Transformation & AI",
+    title: "Hospitality Investment & Development",
     description:
-      "Exploring practical applications of AI, data, cloud, cybersecurity, and emerging technologies across sectors.",
+      "Exploring emerging investment opportunities, hotel development trends, and infrastructure growth strategies across Africa's rapidly expanding hospitality markets.",
     imagePath: images.pillarAI,
   },
   {
-    title: "Technology Policy & Digital Governance",
+    title: "Technology & Digital Innovation",
     description:
-      "Bridging the gap between innovation and regulation to support secure, inclusive, and sustainable digital ecosystems.",
+      "Leveraging digital transformation, AI, and technology to enhance guest experiences, optimise hotel operations, and drive competitive advantage.",
     imagePath: images.pillarGovernance,
   },
   {
-    title: "Innovation, Sustainability & Impact",
+    title: "Sustainability & Responsible Tourism",
     description:
-      "Leveraging technology to advance energy transition, climate action, financial inclusion, smart infrastructure, and social impact.",
+      "Advancing eco-conscious hospitality practices, responsible tourism development, and sustainable operations across Africa's hotel and resort landscape.",
     imagePath: images.pillarSustainability,
   },
   {
-    title: "Cross-Regional Collaboration",
+    title: "Talent Development & Workforce",
     description:
-      "Connecting leaders across Africa, the Middle East, Europe, and North America to share insight, experience, and solutions.",
+      "Building the next generation of hospitality professionals, strengthening workforce capabilities, and inspiring leadership across the continent.",
     imagePath: images.pillarCollaboration,
   },
 ];
 
 export const cities = [
   {
-    name: "Dubai & Abu Dhabi",
-    focus: "Innovation, energy, and digital economy leadership",
+    name: "A Continental Platform",
+    focus: "Providing a high-level platform for hospitality leadership dialogue",
     description:
-      "Leading the global narrative on energy transition and digital governance through high-level summits and executive dialogues.",
-    imagePath: images.cityDubai,
-  },
-  {
-    name: "Accra & Nairobi",
-    focus: "Digital transformation, fintech, and public sector innovation",
-    description:
-      "Hubs of rapid digital evolution, where fintech and public sector innovation converge to redefine African technology leadership.",
+      "Africa's hospitality industry is experiencing a new era of growth. The summit creates the definitive continental platform where the continent's most influential hotel leaders, investors, and innovators meet to drive the sector forward.",
     imagePath: images.cityAccra,
   },
   {
-    name: "Riyadh",
-    focus: "Technology governance and smart nation initiatives",
+    name: "Best Practices & Innovation",
+    focus: "Promoting best practices and innovation in hotel management",
     description:
-      "At the heart of Vision 2030, Riyadh represents the pinnacle of smart nation initiatives and technology-led societal transformation.",
+      "Through thought-leadership sessions and executive panel discussions, the summit surfaces the strategies, technologies, and management approaches that are setting new standards across Africa's hotels and resorts.",
+    imagePath: images.cityDubai,
+  },
+  {
+    name: "Strategic Collaboration",
+    focus: "Strengthening collaboration among hospitality stakeholders",
+    description:
+      "From hotel developers and investors to tourism boards and technology providers, the summit builds bridges across the full hospitality ecosystem — creating partnerships that advance Africa's global competitiveness.",
     imagePath: images.cityRiyadh,
   },
   {
-    name: "New York & Global Cities",
-    focus: "Global perspectives and best practices",
+    name: "Recognising Excellence",
+    focus: "Recognising outstanding leaders shaping the industry",
     description:
-      "Bridging East and West through strategic dialogues in the world's most influential financial and technology capitals.",
+      "Through the prestigious Hotelier Africa Leadership Awards and the Africa's Top 50 Hotel General Managers, the summit celebrates the individuals and organisations driving operational excellence and transformative guest experiences.",
     imagePath: images.cityNyc,
   },
 ];
 
 export const stats = [
   {
-    label: "Global Hubs",
-    value: "25+",
-    icon: <Globe className="w-5 h-5 text-accent" />,
+    label: "Award Categories",
+    value: "40",
+    icon: <Award className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Executive Members",
+    label: "Delegates",
     value: "500+",
     icon: <Users className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Policy Impact",
-    value: "High",
+    label: "Summit Edition",
+    value: "2nd",
     icon: <TrendingUp className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Trust Level",
-    value: "Board",
-    icon: <ShieldCheck className="w-5 h-5 text-accent" />,
+    label: "Continental Reach",
+    value: "Pan-Africa",
+    icon: <Globe className="w-5 h-5 text-accent" />,
   },
 ];

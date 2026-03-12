@@ -12,8 +12,8 @@ export default function About() {
   return (
     <>
       <PageHero
-        headline="About The Technology Boardroom"
-        subtext="The Technology Boardroom convenes Chief Information Officers (CIOs), Chief Technology Officers (CTOs), Chief Digital Officers (CDOs), and Public Sector Technology Leaders from across the Middle East, Africa, and global markets."
+        headline="About the Summit"
+        subtext="Africa's hospitality industry is experiencing a new era of growth, driven by rising tourism demand, increased investment in hotel infrastructure, expansion of international brands, and innovation in guest experience."
         backgroundImage={images.aboutHero}
       />
       <PurposeSection />

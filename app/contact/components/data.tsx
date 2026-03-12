@@ -1,42 +1,36 @@
-import { Mail, Users, Phone, MapPin, Building } from "lucide-react";
+import { Mail, Users, Phone, MapPin } from "lucide-react";
 
 export const contactMethods = [
   {
     type: "General Enquiries",
     icon: <Mail className="w-5 h-5 text-accent" />,
-    details: ["info@thetechnologyboardroom.com", "Response within 48 hours"],
+    details: ["marcom@sbfafrica.com", "Response within 48 hours"],
   },
   {
-    type: "Partnerships & Collaboration",
+    type: "Award Nominations",
     icon: <Users className="w-5 h-5 text-accent" />,
-    details: ["info@radcommgroup.com", "Strategic partnership inquiries"],
+    details: ["marcom@sbfafrica.com", "Nominations for all 40 award categories"],
   },
   {
-    type: "Media & Publishing",
+    type: "Sponsorship & Partnerships",
     icon: <Mail className="w-5 h-5 text-accent" />,
     details: [
-      "publishing@radcommgroup.com",
-      "Editorial & thought leadership submissions",
+      "marcom@sbfafrica.com",
+      "Sponsorship packages and strategic partnerships",
     ],
   },
   {
     type: "Phone",
     icon: <Phone className="w-5 h-5 text-accent" />,
-    details: ["+971 55 790 9643", "+233 24 741 5140"],
+    details: ["+233 20 238 4549", "Secretariat — Mon to Fri"],
   },
 ];
 
 export const offices = [
   {
-    region: "United Arab Emirates",
+    region: "Ghana — West Africa",
     description:
-      "RADCOMM Media Group, Masdar City, Abu Dhabi, United Arab Emirates",
+      "Hotelier Africa, 58 Mansour Street, Parakuo Estates, Christian Village, Accra, Greater Accra Region, Ghana",
     icon: <MapPin className="w-6 h-6 text-accent" />,
-  },
-  {
-    region: "Ghana",
-    description:
-      "RADCOMM Group, 58 Mansour Street, Parakuo Estates, Christian Village Achimota, Accra",
-    icon: <Building className="w-6 h-6 text-accent" />,
   },
 ];

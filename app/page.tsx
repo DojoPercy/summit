@@ -1,5 +1,6 @@
 import HeroSection from "@/components/hero/HeroSection";
 import ExecutiveManifesto from "@/components/executive-manifesto";
+import EventHighlights from "@/components/homepage/EventHighlights";
 import StrategicVision from "@/components/homepage/StrategicVision";
 import StrategicPillars from "@/components/homepage/StrategicPillars";
 import ImpactStats from "@/components/homepage/ImpactStats";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <HeroSection />
       <ExecutiveManifesto />
+      <EventHighlights />
       <StrategicVision />
       <StrategicPillars />
       <ImpactStats />

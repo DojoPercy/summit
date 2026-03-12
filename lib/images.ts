@@ -47,6 +47,12 @@ export const images = {
   projectFintech: "/about/_RAD4787.jpg",
   projectNetworking: "/about/_RAD4813.jpg",
 
+  // ─── Event Highlights (1st Edition photos, shown at full colour) ────────────
+  highlightSession: "/main/_RAD4856.jpg",
+  highlightAwards1: "/main/2NDFF&BMAWARDS2025(47of346).jpg",
+  highlightPanel: "/main/_RAD4872.jpg",
+  highlightGala: "/main/2NDFF&BMAWARDS2025(57of346).jpg",
+
   // ─── Contact Page ───────────────────────────────────────────────────────────
   contactHero: "/about/_RAD4778.jpg",
   contactVisual: "/about/_RAD4838.jpg",

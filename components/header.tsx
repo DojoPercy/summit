@@ -47,7 +47,7 @@ export default function Header() {
           <div className="relative h-20 w-60 sm:w-48">
             <Image
               src={images.logoGold}
-              className="scale-150"
+              className="scale-100"
               alt="Hotelier Africa"
               fill
               style={{ objectFit: "contain" }}

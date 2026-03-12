@@ -1,20 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Lora } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const playfair = Playfair_Display({
+const franklin = Libre_Franklin({
   subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "500", "600", "700"],
-});
-const lora = Lora({
-  subsets: ["latin"],
-  variable: "--font-lora",
-  weight: ["400", "500", "600"],
+  variable: "--font-franklin",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -94,7 +89,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${playfair.variable} ${lora.variable} font-serif antialiased bg-background text-foreground`}
+        className={`${franklin.variable} font-sans antialiased bg-background text-foreground`}
         suppressHydrationWarning
       >
         <ThemeProvider

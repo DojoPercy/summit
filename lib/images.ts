@@ -1,48 +1,55 @@
 export const images = {
-  hero1: "/7thNationalComm&Tech2025(327of601).jpg",
-  hero2: "/7thNationalComm&Tech2025(170of601).jpg",
-  hero3: "/7thNationalComm&Tech2025(229of601).jpg",
-  hero4: "/7thNationalComm&Tech2025(268of601).jpg",
-  hero5: "/7thNationalComm&Tech2025(499of601).jpg",
-  about: "/7thNationalComm&Tech2025(584of601).jpg",
-  contact: "/contact-hero.jpg",
-  projects: "/projects-hero.jpg",
+  // ─── Hero Carousel ──────────────────────────────────────────────────────────
+  hero1: "/about/_RAD4598.jpg",
+  hero2: "/about/_RAD4662.jpg",
+  hero3: "/about/_RAD4700.jpg",
+  hero4: "/about/_RAD4741.jpg",
+  hero5: "/about/_RAD4801.jpg",
+
+  // ─── Logos ──────────────────────────────────────────────────────────────────
   logoWhite: "/hotelier white logo.png",
   logoGold: "/HOTELIER LOGO.png",
   radcomm: "/RADCOMM.png",
-  // Strategic Pillars
-  pillarBoardroom: "/pillars/boardroom.png",
-  pillarAI: "/pillars/ai-tech.png",
-  pillarGovernance: "/pillars/governance.png",
-  pillarSustainability: "/pillars/sustainability.png",
-  pillarCollaboration: "/pillars/collaboration.png",
-  // Global Reach (Cities)
-  cityDubai: "/cities/dubai.jpg",
-  cityAccra: "/cities/accra.jpeg",
-  cityRiyadh: "/cities/riyadh.jpeg",
-  cityNyc: "/cities/nyc.avif",
-  // Backgrounds
-  masdarCity: "/backgrounds/masdar-city.jpg",
-  // About Page Specific
+
+  // ─── About Page ─────────────────────────────────────────────────────────────
   aboutHero: "/about/about-hero.png",
   aboutPurpose: "/about/purpose.png",
   aboutMembership: "/about/membership-preview.png",
   aboutLeadership: "/about/leadership-visual.png",
   aboutProfilePreview: "/about/profile-mockup.png",
-  // Projects Page Specific
-  projectHero: "/projects/project-hero.png",
-  projectRoundtables: "/projects/roundtables.png",
-  projectVirtual: "/projects/virtual-dialogues.png",
-  projectAI: "/projects/ai-energy.png",
-  projectMobility: "/projects/mobility.png",
-  projectFintech: "/projects/fintech.png",
-  projectNetworking: "/projects/networking.png",
-  // Contact Page Specific
-  contactHero: "/contact/contact-hero.png",
-  contactVisual: "/contact/visual.png",
-  // Home Page Expansion Specific
-  homeVision: "/home/vision-bg.png",
-  homeMembership: "/home/membership-bg.png",
+
+  // ─── Strategic Pillars (Summit Focus Areas) ─────────────────────────────────
+  pillarBoardroom: "/about/_RAD4644.jpg",
+  pillarAI: "/about/_RAD4684.jpg",
+  pillarGovernance: "/about/_RAD4651.jpg",
+  pillarSustainability: "/about/_RAD4716.jpg",
+  pillarCollaboration: "/about/_RAD4709.jpg",
+
+  // ─── Why This Summit Matters (4 reason cards) ───────────────────────────────
+  cityDubai: "/about/_RAD4645.jpg",
+  cityAccra: "/about/_RAD4664.jpg",
+  cityRiyadh: "/about/_RAD4738.jpg",
+  cityNyc: "/about/_RAD4754.jpg",
+
+  // ─── Home Section Backgrounds ───────────────────────────────────────────────
+  homeVision: "/about/_RAD4805.jpg",
+  homeMembership: "/about/_RAD4835.jpg",
+
+  // ─── RadcommSignature Background ────────────────────────────────────────────
+  masdarCity: "/about/_RAD4849.jpg",
+
+  // ─── Projects / Programme & Awards Page ─────────────────────────────────────
+  projectHero: "/about/_RAD4600.jpg",
+  projectRoundtables: "/about/_RAD4692.jpg",
+  projectVirtual: "/about/_RAD4731.jpg",
+  projectAI: "/about/_RAD4748.jpg",
+  projectMobility: "/about/_RAD4779.jpg",
+  projectFintech: "/about/_RAD4787.jpg",
+  projectNetworking: "/about/_RAD4813.jpg",
+
+  // ─── Contact Page ───────────────────────────────────────────────────────────
+  contactHero: "/about/_RAD4778.jpg",
+  contactVisual: "/about/_RAD4838.jpg",
 };
 
 export default images;

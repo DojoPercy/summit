@@ -68,22 +68,22 @@ export function HeroCarousel() {
       {/* Arrows */}
       <div className="absolute hidden inset-y-1/2 -translate-y-1/2 md:flex justify-between w-full px-4 sm:px-8 md:px-12 lg:px-[8%]">
         <Button
-          className="rounded-full  cursor-pointer border border-gray-400 bg-white/40 hover:bg-gray-100  shadow-md backdrop-blur-md"
+          className="cursor-pointer border border-white/30 bg-black/30 hover:bg-accent/40 hover:border-accent/60 shadow-md backdrop-blur-md transition-all duration-300"
           size="icon"
           variant="ghost"
           onClick={scrollPrev}
           disabled={!prevEnabled}
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-5 h-5 text-white" />
         </Button>
         <Button
-          className="rounded-full cursor-pointer border border-gray-400 bg-white/40 hover:bg-gray-100 shadow-md backdrop-blur-md"
+          className="cursor-pointer border border-white/30 bg-black/30 hover:bg-accent/40 hover:border-accent/60 shadow-md backdrop-blur-md transition-all duration-300"
           size="icon"
           variant="ghost"
           onClick={scrollNext}
           disabled={!nextEnabled}
         >
-          <ChevronRight className="w-6 h-6 " />
+          <ChevronRight className="w-5 h-5 text-white" />
         </Button>
       </div>
 
@@ -92,7 +92,7 @@ export function HeroCarousel() {
         {slides.map((_, i) => (
           <button
             key={i}
-            className={`w-3 h-3 rounded-full transition-all ${i === selectedIndex ? "bg-yellow-500 scale-110" : "bg-white/40"}`}
+            className={`h-[3px] transition-all duration-300 ${i === selectedIndex ? "bg-accent w-8" : "bg-white/30 w-4 hover:bg-white/60"}`}
             onClick={() => emblaApi?.scrollTo(i)}
           />
         ))}

@@ -11,9 +11,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['var(--font-playfair)', 'var(--font-lora)', 'serif'],
-        display: ['var(--font-playfair)', 'serif'],
-        headline: ['Cormorant Garamond', 'var(--font-playfair)', 'serif'],
+        sans: ['var(--font-franklin)', 'Franklin Gothic Book', 'Arial Narrow', 'sans-serif'],
+        serif: ['var(--font-franklin)', 'Franklin Gothic Book', 'sans-serif'],
+        display: ['var(--font-franklin)', 'Franklin Gothic Book', 'sans-serif'],
+        headline: ['Cormorant Garamond', 'Georgia', 'serif'],
       },
       colors: {
         background: 'hsl(var(--background))',

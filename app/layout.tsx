@@ -18,9 +18,31 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Hotelier Africa Leadership Summit & Awards 2026",
+  title: {
+    default: "Hotelier Africa Leadership Summit & Awards 2026",
+    template: "%s | Hotelier Africa Summit 2026",
+  },
   description:
-    "The 2nd Hotelier Africa Leadership Summit & Awards 2026 – Africa's premier continental platform for hospitality leadership, innovation, and excellence.",
+    "The 2nd Hotelier Africa Leadership Summit & Awards 2026 — Africa's premier continental platform uniting hospitality leaders, investors, and innovators to shape the future of Africa's hospitality industry.",
+  keywords: [
+    "Hotelier Africa",
+    "Africa hospitality summit",
+    "hospitality leadership Africa",
+    "hotel awards Africa 2026",
+    "SBF Africa",
+    "African hospitality industry",
+    "hotel GM awards",
+    "Africa hotel investment",
+    "hospitality conference Accra",
+    "Ghana hospitality event",
+  ],
+  authors: [{ name: "SBF Africa", url: "https://sbfafrica.com" }],
+  creator: "SBF Africa",
+  publisher: "Hotelier Africa",
+  metadataBase: new URL("https://summit.hotelierafricamag.com"),
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -31,8 +53,28 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Hotelier Africa Leadership Summit & Awards 2026",
-    description: "Africa's premier hospitality leadership summit and awards platform.",
+    description:
+      "Africa's premier continental hospitality platform — uniting leaders, celebrating excellence, and driving strategic dialogue across the continent's fastest-growing industry.",
+    url: "https://summit.hotelierafricamag.com",
+    siteName: "Hotelier Africa Summit",
+    locale: "en_GB",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hotelier Africa Leadership Summit & Awards 2026",
+    description:
+      "The 2nd Hotelier Africa Leadership Summit & Awards — Africa's premier hospitality leadership platform, 2026.",
+    creator: "@HotelierAfrica",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
   },
 };
 

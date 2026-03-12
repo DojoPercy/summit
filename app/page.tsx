@@ -1,5 +1,3 @@
-﻿"use client";
-
 import HeroSection from "@/components/hero/HeroSection";
 import ExecutiveManifesto from "@/components/executive-manifesto";
 import StrategicVision from "@/components/homepage/StrategicVision";

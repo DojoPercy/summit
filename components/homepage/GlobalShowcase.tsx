@@ -1,65 +1,54 @@
 "use client";
 
 import SectionContainer from "@/components/section-container";
-import SectionHeading from "@/components/reusable_components/SectionHeading";
-import GoldWaveDivider from "@/components/reusable_components/GoldWaveDivider";
+import Reveal from "@/components/animation/reveal";
 import { cities } from "./data";
 
 export default function GlobalShowcase() {
   return (
-    <section className="py-24" id="locations">
+    <section className="py-24 bg-secondary/30 border-y border-border" id="why-matters">
       <SectionContainer>
-        <SectionHeading
-          title="Why This Summit Matters"
-          subtitle="Africa is one of the world's fastest growing hospitality frontiers. Sustainable industry growth requires strong leadership, innovation, strategic collaboration, and recognition of excellence."
-          divider
-          centered
-          subtitleClassName="max-w-3xl"
-        />
-        <div className="space-y-32">
+        <Reveal>
+          <span className="text-[10px] uppercase tracking-[0.4em] text-accent font-bold">Importance</span>
+          <h2 className="font-headline text-4xl md:text-5xl font-bold text-foreground mt-3 mb-4">
+            Why This Event Matters
+          </h2>
+          <p className="text-foreground/60 text-lg max-w-3xl mb-16">
+            Participation positions your organization as a leader in Ghana&apos;s future resource economy — promoting ESG, sustainable industrialization, export growth, and public-private collaboration.
+          </p>
+        </Reveal>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {cities.map((city, idx) => (
-            <div
-              key={city.name}
-              className={`flex flex-col lg:flex-row gap-12 lg:gap-24 items-center ${idx % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
-            >
-              <div className="w-full lg:w-1/2 relative aspect-[4/3] overflow-hidden rounded-sm group border border-border shadow-xl">
-                {city.imagePath ? (
+            <Reveal key={city.name} delay={idx * 0.1}>
+              <div className="group relative overflow-hidden border border-border bg-card hover:border-accent/40 transition-all duration-300">
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
                   <img
                     src={city.imagePath}
                     alt={city.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 brightness-90"
                   />
-                ) : (
-                  <div className="absolute inset-0 bg-secondary/20 flex items-center justify-center">
-                    <span className="text-foreground/20 text-xs font-mono uppercase tracking-[0.2em]">
-                      // ADD IMAGE: {city.name}
-                    </span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
+                  <div className="absolute bottom-4 left-6">
+                    <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/80">{city.name}</span>
                   </div>
-                )}
-                <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-background/80 to-transparent">
-                  <p className="text-white text-xs font-bold uppercase tracking-widest">
-                    {city.name}
+                </div>
+
+                {/* Content */}
+                <div className="p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-foreground leading-snug group-hover:text-accent transition-colors duration-300">
+                    {city.focus}
+                  </h3>
+                  <p className="text-sm text-foreground/60 leading-relaxed">
+                    {city.description}
                   </p>
                 </div>
-              </div>
 
-              <div className="w-full lg:w-1/2 space-y-6">
-                <span className="hotel-tag mb-4 inline-flex">
-                  <span className="opacity-60">&#9670;</span>
-                  Key Reason
-                  <span className="opacity-60">&#9670;</span>
-                </span>
-                <h3 className="text-3xl lg:text-4xl font-headline font-bold text-foreground mt-4">
-                  {city.focus}
-                </h3>
-                <p className="text-lg text-foreground/70 leading-relaxed font-serif italic line-clamp-4">
-                  {city.description}
-                </p>
-                <div className="pt-4">
-                  <div className="h-px w-24 bg-accent/30" />
-                </div>
+                {/* Left accent border on hover */}
+                <div className="absolute left-0 top-0 w-[3px] h-0 bg-accent group-hover:h-full transition-all duration-500" />
               </div>
-            </div>
+            </Reveal>
           ))}
         </div>
       </SectionContainer>

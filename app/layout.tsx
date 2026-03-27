@@ -14,30 +14,28 @@ const franklin = Libre_Franklin({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hotelier Africa Leadership Summit & Awards 2026",
-    template: "%s | Hotelier Africa Summit 2026",
+    default: "Ghana Green Mining & Critical Minerals Awards 2026",
+    template: "%s | GGMCA 2026",
   },
   description:
-    "The 2nd Hotelier Africa Leadership Summit & Awards 2026 — Africa's premier continental platform uniting hospitality leaders, investors, and innovators to shape the future of Africa's hospitality industry.",
+    "Ghana's premier national recognition platform celebrating excellence, sustainability, innovation, and leadership across Ghana's mining, minerals, timber, and natural resource industries. 24th April 2026 · Accra Marriott Hotel.",
   keywords: [
-    "Hotelier Africa",
-    "Africa hospitality summit",
-    "hospitality leadership Africa",
-    "hotel awards Africa 2026",
+    "Ghana Green Mining Awards",
+    "Critical Minerals Awards Ghana",
+    "responsible mining Ghana",
+    "sustainable mining Africa",
     "SBF Africa",
-    "African hospitality industry",
-    "hotel GM awards",
-    "Africa hotel investment",
-    "hospitality conference Accra",
-    "Ghana hospitality event",
+    "Ghana natural resources",
+    "mining awards 2026",
+    "ESG mining Ghana",
+    "Ghana lithium bauxite gold",
+    "green economy Ghana",
   ],
-  authors: [{ name: "SBF Africa", url: "https://sbfafrica.com" }],
+  authors: [{ name: "SBF Africa" }],
   creator: "SBF Africa",
-  publisher: "Hotelier Africa",
-  metadataBase: new URL("https://summit.hotelierafricamag.com"),
-  alternates: {
-    canonical: "/",
-  },
+  publisher: "Strategic Brand Focus Africa Limited",
+  metadataBase: new URL("https://ggmca.sbfafrica.com"),
+  alternates: { canonical: "/" },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -47,29 +45,24 @@ export const metadata: Metadata = {
     apple: '/favicon.ico',
   },
   openGraph: {
-    title: "Hotelier Africa Leadership Summit & Awards 2026",
+    title: "Ghana Green Mining & Critical Minerals Awards 2026",
     description:
-      "Africa's premier continental hospitality platform — uniting leaders, celebrating excellence, and driving strategic dialogue across the continent's fastest-growing industry.",
-    url: "https://summit.hotelierafricamag.com",
-    siteName: "Hotelier Africa Summit",
+      "Recognizing Responsible Mining • Sustainable Industry • Green Economy Leadership — 24th April 2026, Accra Marriott Hotel.",
+    url: "https://ggmca.sbfafrica.com",
+    siteName: "Ghana Green Mining & Critical Minerals Awards",
     locale: "en_GB",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hotelier Africa Leadership Summit & Awards 2026",
+    title: "Ghana Green Mining & Critical Minerals Awards 2026",
     description:
-      "The 2nd Hotelier Africa Leadership Summit & Awards — Africa's premier hospitality leadership platform, 2026.",
-    creator: "@HotelierAfrica",
+      "Ghana's premier mining and critical minerals recognition platform. 24th April 2026 · Accra Marriott Hotel.",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-    },
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
 };
 
@@ -94,7 +87,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
+          forcedTheme="light"
           enableSystem={false}
           disableTransitionOnChange={false}
         >

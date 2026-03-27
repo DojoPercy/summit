@@ -12,60 +12,67 @@
 
 @layer base {
   :root {
-    /* Hotelier Africa — warm ivory light theme with rich amber gold */
-    --background: 38 20% 97%;
-    --foreground: 30 15% 8%;
-    --card: 38 15% 99%;
-    --card-foreground: 30 15% 8%;
-    --popover: 38 15% 99%;
-    --popover-foreground: 30 15% 8%;
-    --primary: 38 80% 48%;
+    /* GGMCA — extracted directly from logo
+       Gold (flower emblem):   #D4A017  → hsl(43 83% 45%)
+       Forest Green (text):    #1D5C2A  → hsl(133 52% 24%)  */
+    --background: 0 0% 99%;
+    --foreground: 133 18% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 133 18% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 133 18% 12%;
+
+    /* Gold — primary CTA, buttons, accent bars */
+    --primary: 43 83% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 38 12% 90%;
-    --secondary-foreground: 30 15% 8%;
-    --muted: 38 10% 93%;
-    --muted-foreground: 30 8% 42%;
-    --accent: 38 80% 48%;
+
+    /* Forest green — section labels, tags, borders */
+    --secondary: 133 52% 24%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 43 20% 95%;
+    --muted-foreground: 133 12% 44%;
+
+    /* Accent = Gold (awards / CTAs) */
+    --accent: 43 83% 45%;
     --accent-foreground: 0 0% 100%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 38 12% 84%;
-    --input: 38 10% 90%;
-    --ring: 38 80% 48%;
-    --chart-1: 38 80% 48%;
-    --chart-2: 30 8% 55%;
-    --chart-3: 30 8% 38%;
-    --chart-4: 38 60% 40%;
-    --chart-5: 35 65% 38%;
+    --border: 133 10% 86%;
+    --input: 133 8% 92%;
+    --ring: 43 83% 45%;
+
+    /* Named tokens for direct use in components */
+    --gold: 43 83% 45%;
+    --green: 133 52% 24%;
+
     --radius: 0rem;
   }
 
   .dark {
-    /* Hotelier Africa — deep warm charcoal with rich amber gold */
-    --background: 30 8% 6%;
-    --foreground: 38 15% 94%;
-    --card: 30 8% 9%;
-    --card-foreground: 38 15% 94%;
-    --popover: 30 8% 9%;
-    --popover-foreground: 38 15% 94%;
-    --primary: 38 82% 62%;
-    --primary-foreground: 30 8% 6%;
-    --secondary: 30 8% 22%;
-    --secondary-foreground: 38 15% 94%;
-    --muted: 30 6% 18%;
-    --muted-foreground: 38 8% 68%;
-    --accent: 38 82% 62%;
-    --accent-foreground: 30 8% 6%;
+    /* Dark sections (hero, sponsorship) — deep forest with gold accent */
+    --background: 133 30% 7%;
+    --foreground: 43 25% 94%;
+    --card: 133 25% 10%;
+    --card-foreground: 43 25% 94%;
+    --popover: 133 25% 10%;
+    --popover-foreground: 43 25% 94%;
+    --primary: 43 83% 52%;
+    --primary-foreground: 133 30% 7%;
+    --secondary: 133 35% 20%;
+    --secondary-foreground: 43 25% 94%;
+    --muted: 133 20% 14%;
+    --muted-foreground: 43 12% 62%;
+    --accent: 43 83% 52%;
+    --accent-foreground: 133 30% 7%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 30 8% 17%;
-    --input: 30 8% 13%;
-    --ring: 38 82% 62%;
-    --chart-1: 38 82% 62%;
-    --chart-2: 30 6% 40%;
-    --chart-3: 30 6% 58%;
-    --chart-4: 38 60% 52%;
-    --chart-5: 35 65% 58%;
+    --border: 133 18% 18%;
+    --input: 133 15% 14%;
+    --ring: 43 83% 52%;
+    --gold: 43 83% 52%;
+    --green: 133 52% 42%;
   }
 }
 

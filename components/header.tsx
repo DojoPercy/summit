@@ -3,10 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { usePathname } from "next/navigation";
-import { motion as _motion, AnimatePresence } from "framer-motion";
+import { motion as _motion } from "framer-motion";
 import images from "@/lib/images";
-import { ThemeToggle } from "./theme-toggle";
 import { Menu } from "lucide-react";
 import {
   Sheet,
@@ -20,15 +18,15 @@ import {
 const motion: any = _motion as any;
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Programme & Awards", href: "/projects" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "Home", href: "#" },
+  { name: "About", href: "#about" },
+  { name: "Theme", href: "#theme" },
+  { name: "Objectives", href: "#objectives" },
+  { name: "Sponsorship", href: "#sponsorship" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export default function Header() {
-  const pathname = usePathname();
-
   return (
     <motion.header
       className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border"
@@ -59,21 +57,14 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           {navigation.map((item) => (
-            <Link
+            <a
               key={item.href}
               href={item.href}
-              className={`text-xs uppercase tracking-widest font-bold transition-colors relative pb-1 ${
-                pathname === item.href
-                  ? "text-accent after:absolute after:bottom-0 after:left-0 after:right-0 after:h-px after:bg-accent"
-                  : "text-foreground/60 hover:text-foreground"
-              }`}
+              className="text-xs uppercase tracking-widest font-bold transition-colors text-foreground/60 hover:text-accent"
             >
               {item.name}
-            </Link>
+            </a>
           ))}
-          <div className="ml-4">
-            <ThemeToggle />
-          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -96,32 +87,21 @@ export default function Header() {
               </SheetHeader>
               <div className="flex flex-col py-6">
                 {navigation.map((item) => (
-                  <Link
+                  <a
                     key={item.href}
                     href={item.href}
-                    className={`px-8 py-4 text-lg font-medium transition-colors border-l-2 ${
-                      pathname === item.href
-                        ? "text-accent border-accent bg-accent/5"
-                        : "text-foreground/70 border-transparent hover:text-foreground hover:bg-secondary/5"
-                    }`}
+                    className="px-8 py-4 text-lg font-medium transition-colors border-l-2 text-foreground/70 border-transparent hover:text-accent hover:border-accent"
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 ))}
-
-                <div className="mt-8 px-8 py-4 flex items-center justify-between border-t border-border/50">
-                  <span className="text-sm font-medium text-foreground/50">
-                    Theme Mode
-                  </span>
-                  <ThemeToggle />
-                </div>
 
                 <div className="mt-auto p-8">
                   <Button
                     asChild
                     className="w-full bg-accent text-accent-foreground"
                   >
-                    <Link href="/contact">Register Now</Link>
+                    <a href="#sponsorship">Reserve a Table</a>
                   </Button>
                 </div>
               </div>
@@ -130,12 +110,12 @@ export default function Header() {
         </div>
 
         {/* Desktop CTA Button */}
-        <Button
-          asChild
-          className="hidden md:flex ml-4 bg-accent text-accent-foreground hover:bg-primary"
+        <a
+          href="#sponsorship"
+          className="hidden md:flex ml-4 bg-accent text-accent-foreground hover:brightness-110 px-5 py-2 text-xs uppercase tracking-widest font-bold transition-all duration-200"
         >
-          <Link href="/contact">Register Now</Link>
-        </Button>
+          Reserve a Table
+        </a>
       </nav>
     </motion.header>
   );

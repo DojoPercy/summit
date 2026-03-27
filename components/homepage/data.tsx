@@ -1,89 +1,94 @@
-import images from "@/lib/images";
-import { Globe, Users, TrendingUp, Award } from "lucide-react";
+import { Calendar, MapPin, Clock, Leaf } from "lucide-react";
 
 export const pillars = [
   {
-    title: "Leadership Excellence in Hospitality",
+    title: "Celebrate Industry Leadership",
     description:
-      "Elevating hotel management conversations to strategic boardroom level, celebrating and strengthening leadership excellence across Africa's hospitality sector.",
-    imagePath: images.pillarBoardroom,
+      "Recognize companies and individuals demonstrating excellence across mining, minerals, forestry, manufacturing, and natural resource industries.",
+    imagePath: "",
   },
   {
-    title: "Hospitality Investment & Development",
+    title: "Promote Responsible Mining & Sustainability",
     description:
-      "Exploring emerging investment opportunities, hotel development trends, and infrastructure growth strategies across Africa's rapidly expanding hospitality markets.",
-    imagePath: images.pillarAI,
+      "Highlight companies implementing ESG standards, environmental protection measures, and responsible extraction practices.",
+    imagePath: "",
   },
   {
-    title: "Technology & Digital Innovation",
+    title: "Encourage Innovation & Value Addition",
     description:
-      "Leveraging digital transformation, AI, and technology to enhance guest experiences, optimise hotel operations, and drive competitive advantage.",
-    imagePath: images.pillarGovernance,
+      "Promote mineral processing, local manufacturing, export growth, and industrial transformation that strengthens Ghana's economy.",
+    imagePath: "",
   },
   {
-    title: "Sustainability & Responsible Tourism",
+    title: "Strengthen Public–Private Collaboration",
     description:
-      "Advancing eco-conscious hospitality practices, responsible tourism development, and sustainable operations across Africa's hotel and resort landscape.",
-    imagePath: images.pillarSustainability,
+      "Provide a platform for dialogue between government, regulators, investors, and industry to align on Ghana's resource agenda.",
+    imagePath: "",
   },
   {
-    title: "Talent Development & Workforce",
+    title: "Support Ghana's Green Economy Agenda",
     description:
-      "Building the next generation of hospitality professionals, strengthening workforce capabilities, and inspiring leadership across the continent.",
-    imagePath: images.pillarCollaboration,
+      "Promote responsible use of natural resources to ensure long-term economic growth and environmental sustainability.",
+    imagePath: "",
+  },
+  {
+    title: "Enhance Ghana's Global Resource Competitiveness",
+    description:
+      "Position Ghana as a trusted global supplier of responsibly sourced minerals and natural resources.",
+    imagePath: "",
   },
 ];
 
 export const cities = [
   {
-    name: "A Continental Platform",
-    focus: "Providing a high-level platform for hospitality leadership dialogue",
+    name: "ESG & Responsible Mining",
+    focus: "Advancing environmental, social, and governance standards",
     description:
-      "Africa's hospitality industry is experiencing a new era of growth. The summit creates the definitive continental platform where the continent's most influential hotel leaders, investors, and innovators meet to drive the sector forward.",
-    imagePath: images.cityAccra,
+      "Ghana's mining sector is under growing global scrutiny. This platform champions companies that lead by example — implementing ESG frameworks, protecting communities, and setting the benchmark for responsible resource extraction across Africa.",
+    imagePath: "/about/_RAD4662.jpg",
   },
   {
-    name: "Best Practices & Innovation",
-    focus: "Promoting best practices and innovation in hotel management",
+    name: "Critical Minerals Development",
+    focus: "Unlocking Ghana's critical minerals potential",
     description:
-      "Through thought-leadership sessions and executive panel discussions, the summit surfaces the strategies, technologies, and management approaches that are setting new standards across Africa's hotels and resorts.",
-    imagePath: images.cityDubai,
+      "As global demand for lithium, bauxite, manganese, and other critical minerals surges, Ghana holds extraordinary strategic value. This Awards platform elevates the companies and leaders driving the responsible development of these high-value resources.",
+    imagePath: "/about/_RAD4664.jpg",
   },
   {
-    name: "Strategic Collaboration",
-    focus: "Strengthening collaboration among hospitality stakeholders",
+    name: "Investor Confidence",
+    focus: "Building a credible, investment-ready resource sector",
     description:
-      "From hotel developers and investors to tourism boards and technology providers, the summit builds bridges across the full hospitality ecosystem — creating partnerships that advance Africa's global competitiveness.",
-    imagePath: images.cityRiyadh,
+      "Recognition matters to investors. By celebrating governance, transparency, and excellence, this platform signals to global capital markets that Ghana's mining and resource sector is a safe, attractive, and profitable destination for long-term investment.",
+    imagePath: "/about/_RAD4684.jpg",
   },
   {
-    name: "Recognising Excellence",
-    focus: "Recognising outstanding leaders shaping the industry",
+    name: "Public–Private Collaboration",
+    focus: "Bridging government, industry, and development partners",
     description:
-      "Through the prestigious Hotelier Africa Leadership Awards and the Africa's Top 50 Hotel General Managers, the summit celebrates the individuals and organisations driving operational excellence and transformative guest experiences.",
-    imagePath: images.cityNyc,
+      "No resource economy thrives without alignment between regulators, operators, and financiers. This platform creates a high-level space where policymakers, mining companies, investors, and development partners come together to shape Ghana's green economy.",
+    imagePath: "/about/_RAD4780.jpg",
   },
 ];
 
 export const stats = [
   {
-    label: "Award Categories",
-    value: "40",
-    icon: <Award className="w-5 h-5 text-accent" />,
+    label: "Event Date",
+    value: "24 Apr",
+    icon: <Calendar className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Delegates",
-    value: "500+",
-    icon: <Users className="w-5 h-5 text-accent" />,
+    label: "Venue",
+    value: "Marriott",
+    icon: <MapPin className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Summit Edition",
-    value: "2nd",
-    icon: <TrendingUp className="w-5 h-5 text-accent" />,
+    label: "Start Time",
+    value: "7 PM",
+    icon: <Clock className="w-5 h-5 text-accent" />,
   },
   {
-    label: "Continental Reach",
-    value: "Pan-Africa",
-    icon: <Globe className="w-5 h-5 text-accent" />,
+    label: "Focus",
+    value: "Green",
+    icon: <Leaf className="w-5 h-5 text-accent" />,
   },
 ];

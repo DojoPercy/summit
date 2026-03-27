@@ -7,8 +7,8 @@ export const images = {
   hero5: "/about/_RAD4801.jpg",
 
   // ─── Logos ──────────────────────────────────────────────────────────────────
-  logoWhite: "/hotelier white logo.png",
-  logoGold: "/HOTELIER LOGO.png",
+  logoWhite: "/home/GHANA GREEN MINING WHITE.png",
+  logoGold: "/home/GHANA GREEN MINING.png",
   radcomm: "/RADCOMM.png",
 
   // ─── About Page ─────────────────────────────────────────────────────────────
